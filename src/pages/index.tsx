@@ -4,7 +4,7 @@ import { FcSurvey } from 'react-icons/fc'
 import { HeroBenefits } from '../components/HeroBenefits'
 import { LinkGenerator } from '../components/LinkGenerator'
 import Planos from '../components/Planos'
-import { CallActionButton, HomeHero } from './styles/home'
+import { CallActionButton, HomeHero } from '../styles/home'
 
 const Home: NextPage = () => {
   return (
