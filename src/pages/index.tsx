@@ -8,6 +8,7 @@ import { HeroBenefits } from '../components/HeroBenefits'
 import { LinkGenerator } from '../components/LinkGenerator'
 import Planos from '../components/Planos'
 import { CallActionButton, HomeHero } from '../styles/home'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -22,8 +23,12 @@ const Home: NextPage = () => {
         </div>
         <span>Transforme seu jogo em uma experiência única com a nossa customização!</span>
         <h1>Faça agora seu Pedido <FcSurvey /> </h1>
-        <CallActionButton>
+        <CallActionButton >
+        <Link href="https://api.whatsapp.com/send?text=Interfaces%20Ui&phone=+5584996443438"  passHref>
+          <a target="_blank" rel="noopener noreferrer">
           Fazer Encomenda
+          </a>
+        </Link>
         </CallActionButton>
       </HomeHero>
       <HeroBenefits title="Transforme seu jogo, personalize sua jogabilidade." />
