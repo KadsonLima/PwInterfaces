@@ -1,4 +1,7 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
+import Woman from '../../public/images/mulher.png'
+import Abissal from '../../public/images/racas_abissal_ilustracao.png'
 import Head from 'next/head'
 import { FcSurvey } from 'react-icons/fc'
 import { HeroBenefits } from '../components/HeroBenefits'
@@ -13,6 +16,10 @@ const Home: NextPage = () => {
         <title>KasH | Customizações UI | Lives | Widgets</title>
       </Head>
       <HomeHero>
+        <div className='casa'>
+            <Image src={Abissal} alt="Abissal"/>
+            <Image src={Woman} alt="mulher"/>  
+        </div>
         <span>Transforme seu jogo em uma experiência única com a nossa customização!</span>
         <h1>Faça agora seu Pedido <FcSurvey /> </h1>
         <CallActionButton>

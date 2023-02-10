@@ -12,6 +12,7 @@ export const CallToActionContainer = styled.section`
   span,
   h1 {
     margin: 1rem 0;
+    font-weight: 900;
   }
 
   button {
@@ -21,11 +22,13 @@ export const CallToActionContainer = styled.section`
   span {
     font-size: 1.2rem;
     text-transform: uppercase;
+    font-weight: 900;
     color: ${props => props.theme.colors.green};
   }
 
   h1 {
     font-size: 2.5rem;
+    color: white;
   }
 `;
 export const CallToActionContent = styled.section`

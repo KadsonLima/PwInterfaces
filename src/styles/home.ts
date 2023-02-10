@@ -4,30 +4,52 @@ import styled from 'styled-components';
 export const HomeHero = styled.section`
   height: 25rem;
   background: #f4f8f3;
-
+  background-image: url('/images/banner.png');
+  background-repeat:no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  position: relative;
   span,
   h1 {
     margin: 1rem 0;
+    z-index: 1;
+    
   }
 
   button {
     margin: 2rem 0;
+  z-index: 1;
+    font-weight: 900;
   }
 
   span {
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: ${props => props.theme.colors.green};
+    color: white;
+    font-weight: 900;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  z-index: 1;
+
   }
 
   h1 {
     font-size: 2.5rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  z-index: 1;
+
   }
+
+  .casa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+  }
+
 `;
 
 export const CallActionButton = styled.button`
