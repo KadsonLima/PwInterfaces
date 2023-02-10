@@ -6,6 +6,7 @@ import { CardPlan, PricingContainer, Section } from './styles'
 export default function Planos() {
   return(
     <Section>
+      <div className='planos'>Planos</div>
       <PricingContainer>
         <CardPlan>
           <p>Converter Versão</p>

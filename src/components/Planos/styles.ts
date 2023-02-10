@@ -59,8 +59,26 @@ export const PricingContainer = styled.section`
 
 export const Section = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  border-top: 5px dotted #e5343a;
+  border-top: 5px solid #e5e5e5;
+
+  .planos{
+    width: 100%;
+    height: 400px;
+    background-image: url('/images/planos.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    font-family: Poppins,sans-serif;
+    text-transform: uppercase;
+    color: #e5e5e5;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  }
 `
 
 export const CardPlan = styled.article`
