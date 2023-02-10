@@ -29,7 +29,7 @@ export default function Planos() {
             </li>
           </ul>
         </CardPlan>
-        <CardPlan>
+        {/**<CardPlan>
           <p>UI Individual</p>
           <div>
             <h3>R$ 150,00</h3>
@@ -81,7 +81,7 @@ export default function Planos() {
               <span> Gráficos de acesso  </span>
             </li>
           </ul>
-        </CardPlan>
+  </CardPlan>**/}
       </PricingContainer>
     </Section>
   )
