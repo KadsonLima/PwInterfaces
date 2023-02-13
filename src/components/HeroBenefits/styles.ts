@@ -25,7 +25,7 @@ export const HeroBenefitsContent = styled.div`
 export const Cards = styled.div`
   width: 100%;
   height: 100vh;
-
+  gap: 4px;
   display: flex;
   align-items: center;
   flex-direction: row;
