@@ -39,7 +39,7 @@ export const HomeHero = styled.section`
     font-size: 2.5rem;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   z-index: 1;
-
+  color: #eeeeee;
   }
 
   .casa{
@@ -49,6 +49,22 @@ export const HomeHero = styled.section`
     display: flex;
     justify-content: space-between;
   }
+
+  @media only screen and (max-width: 768px) {
+    .casa img{
+      visibility: hidden;
+    }
+    
+    h1 {
+    font-size: 2rem;
+    }
+
+    span {
+    visibility: hidden;
+    }
+
+    
+  } 
 
 `;
 

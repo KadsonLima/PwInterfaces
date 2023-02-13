@@ -5,7 +5,7 @@ import Abissal from '../../public/images/racas_abissal_ilustracao.png'
 import Head from 'next/head'
 import { FcSurvey } from 'react-icons/fc'
 import { HeroBenefits } from '../components/HeroBenefits'
-import { LinkGenerator } from '../components/LinkGenerator'
+import { IoLogoWhatsapp } from 'react-icons/io'
 import Planos from '../components/Planos'
 import { CallActionButton, HomeHero } from '../styles/home'
 import Link from 'next/link'
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <CallActionButton >
         <Link href="https://api.whatsapp.com/send?text=Interfaces%20Ui&phone=+5584996443438"  passHref>
           <a target="_blank" rel="noopener noreferrer">
-          Fazer Encomenda
+          Entrar em Contato <IoLogoWhatsapp/>
           </a>
         </Link>
         </CallActionButton>

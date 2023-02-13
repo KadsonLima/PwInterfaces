@@ -47,4 +47,20 @@ export default createGlobalStyle`
       font-size: 87.5%;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .casa img{
+      visibility: hidden;
+    }
+    
+    h1 {
+    font-size: 1.8rem;
+    }
+
+    span {
+    font-size: 0.8rem;
+    }
+
+
+  } 
 `;

@@ -29,4 +29,9 @@ export const Button = styled.button`
   &:hover {
     background: ${props => lighten(0.1, props.theme.colors.linkHover)};
   }
+
+  @media only screen and (max-width: 768px) {
+      display: none;
+      visibility: hidden;
+    }
 `;
