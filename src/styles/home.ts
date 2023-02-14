@@ -68,33 +68,56 @@ export const HomeHero = styled.section`
 
 `;
 
-export const CallActionButton = styled.button`
+export const CallActionButton = styled.div`
   height: 3.2rem;
-  border-radius: ${props => props.theme.defaultRadiusBorder};
-  background: ${props => lighten(0.45, props.theme.colors.green)};
-  border: 1px solid ${props => props.theme.colors.green};
-  padding: 1.5rem 3.5rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
+  gap: 7px;
+  a{
+    border-radius: ${props => props.theme.defaultRadiusBorder};
+    padding: 0.3rem;
+    font-weight: bolder;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    gap: 4px;
+    font-size: smaller;
 
-  color: ${props => props.theme.colors.green};
-  font-weight: normal;
-
-  svg {
-    width: 18px;
-    height: 18px;
   }
 
-  svg:first-child {
-    margin-right: 1rem;
+  a:first-child{
+    background: #ffff;
+    border: 1px solid green;
+    color: green;
+
+    &:hover {
+    color: #ffff;
+    background: green;
+    }
+  }
+
+  a:nth-child(2) {
+
+    background: #ffff;
+    border: 1px solid #1c93e3;
+    color: #1c93e3;
+
+    &:hover {
+    color: #ffff;
+    background: #1c93e3;
+    }
+  }
+
+  svg {
+    width: auto;
+    height: 20px;
   }
 
   transition: 0.2s;
 
-  &:hover {
-    color: white;
-    background: ${props => lighten(0.1, props.theme.colors.linkHover)};
-  }
+  
 `;

@@ -1,4 +1,4 @@
 export interface languageContextType {
-    locale: String;
+    locale: string;
     setLocale: () => void;
 };
