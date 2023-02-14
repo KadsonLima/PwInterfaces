@@ -9,6 +9,7 @@ import GlobalStyle from '../styles/global';
 import { ToogleButton, ToogleTheme } from '../components/ToogleTheme';
 import { useState } from 'react';
 import light from '../styles/themes/light';
+import { LanguageProvider } from '../contexts/LangContext';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -17,11 +18,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <AppContext.Provider value={{}}>
       <ThemeProvider theme={theme}>
-      <ToogleTheme theme={theme} setTheme={setTheme}/>
-        <GlobalStyle />
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
+        <ToogleTheme theme={theme} setTheme={setTheme}/>
+          <GlobalStyle />
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
       </ThemeProvider>
     </AppContext.Provider>
   )
