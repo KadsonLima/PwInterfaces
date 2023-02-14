@@ -1,37 +1,56 @@
 import { lighten } from 'polished';
+import Flag from 'react-world-flags';
 import styled from 'styled-components';
 
-export const Button = styled.button`
-  height: 2.7rem;
-  border-radius: ${props => props.theme.defaultRadiusBorder};
-  background: ${props => props.theme.colors.linkHover};
-  border: 0;
-  padding: 0 1.5rem;
+interface FlagChecked{
+  testando:boolean;
+}
 
+export const FlagCountry = styled.div<FlagChecked>`
+    border: 3px solid #d1a212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d1a212;
+    img{
+    width: auto;
+    height: 30px;
+    object-fit: cover;
+    opacity: ${props => props.testando ? 0.14 : 1};
+    
+
+    &:hover{
+      ${props => props.testando ? `opacity:0.8` : `cursor: pointer;
+      filter: brightness(1.4);`};
+      
+      }
+    }
+
+`
+
+
+export const ChoiceButton = styled.div`
+  width: 100%;
+  position: absolute;
+  top: 3px;
   display: flex;
-  align-items: center;
   justify-content: center;
 
-  color: white;
-  font-weight: bolder;
-
-  svg {
-    width: 18px;
-    height: 18px;
+  .content-flag{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    color: green;
+    
+  
   }
 
-  svg:first-child {
-    margin-right: 1rem;
-  }
+  
 
-  transition: 0.2s;
-
-  &:hover {
-    background: ${props => lighten(0.1, props.theme.colors.linkHover)};
-  }
-
+  
+  
   @media only screen and (max-width: 768px) {
-      display: none;
-      visibility: hidden;
     }
 `;

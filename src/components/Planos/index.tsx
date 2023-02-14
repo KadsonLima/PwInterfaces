@@ -3,30 +3,41 @@ import { CallToAction } from '../CallToAction'
 import { HeroBenefits } from '../HeroBenefits'
 import { CardPlan, PricingContainer, Section } from './styles'
 
-export default function Planos() {
+interface PlanosType{
+  bgTitle:string;
+  scheme:{
+    title:string
+    price:string
+    subtitle:string
+    option:string
+    checks:string[]
+  }
+}
+
+export default function Planos({bgTitle, scheme}:PlanosType) {
   return(
     <Section>
-      <div className='planos'>Planos</div>
+      <div className='planos'>{bgTitle}</div>
       <PricingContainer>
         <CardPlan>
-          <p>Converter Versão</p>
+          <p>{scheme.title}</p>
           <div>
-            <h3>R$ 50,00</h3>
-            <p>Convertar sua Interface para outra Versão</p> 
+            <h3>{scheme.price}</h3>
+            <p>{scheme.subtitle}</p> 
           </div>
-          <div className='second-session'>Está incluso nesse plano</div>
+          <div className='second-session'>{scheme.option}</div>
           <ul>
             <li>
               <RiCheckLine />
-              <span> Correção de bugs</span>
+              <span> {scheme.checks[0]}</span>
             </li>
             <li>
               <RiCheckLine />
-              <span> Agilidade, prazo de até 1 dia </span>
+              <span> {scheme.checks[1]}</span>
             </li>
             <li>
               <RiCloseLine />
-              <span> Personalização</span>
+              <span> {scheme.checks[2]}</span>
             </li>
           </ul>
         </CardPlan>

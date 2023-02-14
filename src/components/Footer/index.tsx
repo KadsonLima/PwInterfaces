@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <FooterContainer>
       <FooterContent>
-        KasH feito com muito ❤️. Todos os direitos reservados.
+      Kash made with a lot ❤️.All rights reserved.
       </FooterContent>
     </FooterContainer>
   )

@@ -8,25 +8,31 @@ import { HeroBenefits } from "../components/HeroBenefits";
 import { FaTelegram , FaWhatsapp} from "react-icons/fa";
 import Planos from "../components/Planos";
 import { CallActionButton, HomeHero } from "../styles/home";
-import Link from "next/link";
+import {useState} from 'react'
+import { LanguageButton } from "../components/LanguageButton";
+import Languages from '../assets/home.json'
 
 const Home: NextPage = () => {
+  const [locale, setLocale] = useState("pt-BR");
+
+  const {[0]:currentLanguage} = Languages.languages.filter((language)=>(language.locale === locale))
+
   return (
     <>
       <Head>
         <title>KasH | Customizações UI | Lives | Widgets</title>
       </Head>
+      <LanguageButton locale={locale} setLocale={setLocale} />
       <HomeHero>
         <div className="casa">
           <Image src={Abissal} alt="Abissal" />
           <Image src={Woman} alt="mulher" />
         </div>
-        <h1>O pais que vc está é :</h1>
         <span>
-          Transforme seu jogo em uma experiência única com a nossa customização!
+          {currentLanguage.title}
         </span>
         <h1>
-          Faça agora seu Pedido <FcSurvey />{" "}
+          {currentLanguage.description} <FcSurvey />{" "}
         </h1>
         <CallActionButton>
           <a
@@ -41,8 +47,8 @@ const Home: NextPage = () => {
           </a>
         </CallActionButton>
       </HomeHero>
-      <HeroBenefits title="Transforme seu jogo, personalize sua jogabilidade." />
-      <Planos />
+      <HeroBenefits title={currentLanguage.subtitle} cubes={currentLanguage.cubes}/>
+      <Planos bgTitle={currentLanguage.bgTitle} scheme={currentLanguage.scheme}/>
     </>
   );
 };

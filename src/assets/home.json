@@ -33,7 +33,7 @@
         "bgTitle":"Планы",
         "scheme":{
             "title":"Конвертировать версию",
-            "price":"R$ 50,00",
+            "price":"$ 15,00",
             "subtitle":"Преобразовать свой интерфейс в другую версию",
             "option":"Включен в этот план",
             "checks":["Коррекция ошибок", "Ловкость, до 1 дня", "Персонализация"]
@@ -41,7 +41,7 @@
         "footer":"Каш сделал много ❤.Все права защищены."
       },
       {
-        "locale": "en-US",
+        "locale": "en-EN",
         "title": "Turn your game into a unique experience with our customization!",
         "description": "Get in touch",
         "subtitle": "Turn your game, customize your gameplay.",
@@ -53,7 +53,7 @@
         "bgTitle":"Plans",
         "scheme":{
             "title":"Convert version ",
-            "price": "R $ 50,00",
+            "price": "$ 15,00",
             "subtitle": "Convert your interface to another version",
             "option": "This plan is included",
             "checks":["Bug correction "," agility, up to 1 day "," personalization"]
