@@ -33,7 +33,7 @@ export const Nav = styled.nav`
     transition: color 0.2s;
 
     & + a {
-      margin-left: 2rem;
+      margin-left: 0.2rem;
     }
 
     &:hover {
