@@ -56,8 +56,8 @@ export const VideosAll = () =>{
     const VideosList = videos?.map((video, index)=>{
 
         return <VideoBox key={index}>
-            <iframe width="500" height="285" src={video.img} title="YouTube video player" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-            </VideoBox>
+            <iframe className="video" src={video.img} title="YouTube video player" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        </VideoBox>
     })
 
     
@@ -83,10 +83,11 @@ const VideoBox = styled.div`
     position: relative;
     border-radius: 15px;
 
-    div{
-        position: absolute;
-        left: 0;
-        width: 100%;
+    .video{
+        width: 400px;
+        height: 200px;
+        border: 2px solid gray;
+        border-radius: 10px;
     }
 
     h3{

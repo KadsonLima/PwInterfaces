@@ -6,17 +6,16 @@ interface FlagChecked {
 }
 
 export const FlagCountry = styled.div<FlagChecked>`
-    border: 3px solid rgb(162, 21, 40);
+    border: 3px solid ${props => props.theme.colors.border};
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: rgb(162, 21, 40);
     img{
-    width: auto;
-    height: 30px;
-    object-fit: cover;
-    opacity: ${(props) => (props.testando ? 0.14 : 1)};
+    width: 15px;
+    height: auto;
+    object-fit: contain;
+    opacity: ${(props) => (props.testando ? 0.54 : 1)};
     
 
     &:hover{
@@ -32,17 +31,22 @@ export const FlagCountry = styled.div<FlagChecked>`
 `;
 
 export const ChoiceButton = styled.div`
-  width: 100%;
   position: absolute;
+  z-index: 3;
   top: 3px;
+  left: center;
   display: flex;
   justify-content: center;
-
+   align-items: center;
+   border-radius: 5px;
+   border: 2px solid ${props => props.theme.colors.text};
+  padding: 2px;
+  background-color: ${props => props.theme.colors.background};
+  color: ${props => props.theme.colors.text};
   .content-flag {
     width: 100px;
     display: flex;
     justify-content: center;
-    gap: 2px;
     color: green;
   }
 

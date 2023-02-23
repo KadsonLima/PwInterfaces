@@ -23,8 +23,9 @@ const Home: NextPage = () => {
       <Head>
         <title>KasH | Customizações UI | Lives | Widgets</title>
       </Head>
-      <LanguageButton locale={locale} setLocale={setLocale} />
       <HomeHero>
+      <LanguageButton locale={locale} setLocale={setLocale} />
+
         <div className="casa">
           <Image src={Abissal} alt="Abissal" />
           <Image src={Woman} alt="mulher" />

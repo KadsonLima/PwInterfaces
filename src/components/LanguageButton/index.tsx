@@ -13,10 +13,11 @@ export interface LanguageType{
 
 export function LanguageButton({locale, setLocale}:LanguageType) {
   
-  console.log(locale)
+  
 
   return (
     <ChoiceButton>
+      <h3>{locale.split("-")[0].toUpperCase()}-</h3>
       <div className='content-flag'>
         <FlagCountry onClick={()=>{setLocale("pt-BR")}} testando={locale === "pt-BR"}>
           <Image src={Brazil} alt="brazil" />

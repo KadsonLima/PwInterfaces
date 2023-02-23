@@ -2,12 +2,11 @@ import { shade } from 'polished';
 import styled from 'styled-components';
 
 export const FooterContainer = styled.header`
-position: fixed;
 width: 100%;
 z-index: 1;
 left: 0;
 bottom: 0;
-  height: 5rem;
+  height: 3rem;
   background: ${props => props.theme.colors.background};
   border-top: 2px solid gray;
 
