@@ -88,8 +88,9 @@ const VideoBox = styled.div`
         height: 200px;
         border: 2px solid gray;
         border-radius: 10px;
-    }
 
+       
+    }
     h3{
         position: absolute;
         right: 15px;
