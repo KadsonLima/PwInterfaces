@@ -17,9 +17,9 @@ export function Header() {
           <ActiveLink activeClassName="active" href="/">
             <a>Home</a>
           </ActiveLink>
-          {/* <ActiveLink activeClassName="active" href="/planos" prefetch>
-            <a>Planos</a>
-          </ActiveLink> */}
+           <ActiveLink activeClassName="active" href="/gallery" prefetch>
+            <a>Gallery</a>
+          </ActiveLink> 
         </Nav>
         <SignInButton />
       </HeaderContent>

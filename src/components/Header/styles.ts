@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   height: 5rem;
-  border-bottom: 1px solid ${props => props.theme.colors.primary};
+  border-bottom: 2px solid gray;
 `;
 
 export const HeaderContent = styled.div`
