@@ -18,6 +18,7 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Head><title>KasH | Gallery</title></Head>
       <VideosAll/>
     </>
   );
