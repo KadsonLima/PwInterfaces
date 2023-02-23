@@ -41,8 +41,8 @@ export default function Planos({bgTitle, scheme}:PlanosType) {
             </li>
           </ul>
         </CardPlan>
-        {/**<CardPlan>
-          <p>UI Individual</p>
+       <CardPlan>
+          <p>UI Individual - Basic</p>
           <div>
             <h3>R$ 150,00</h3>
             <p>Criação de interface personalizada.</p>
@@ -51,49 +51,22 @@ export default function Planos({bgTitle, scheme}:PlanosType) {
           <ul>
             <li>
               <RiCheckLine />
-              <span> 1 Campanha ativa </span>
+              <span> Map, HP, Target, Bars Custom</span>
             </li>
             <li>
               <RiCheckLine />
-              <span> 3 Links por campanha </span>
+              <span> Unique UI</span>
+            </li>
+            <li>
+              <RiCheckLine />
+              <span> Trainer 10 days Test</span>
             </li>
             <li>
               <RiCloseLine />
-              <span> Tracking de leads  </span>
-            </li>
-            <li>
-              <RiCloseLine />
-              <span> Gráficos de acesso  </span>
+              <span> GFX custom </span>
             </li>
           </ul>
-        </CardPlan>
-        <CardPlan>
-          <p>UI Guild</p>
-          <div>
-            <h3>R$ 200,00</h3>
-            <p>Estamos em beta! por enquanto tudo é grátis</p>
-            
-          </div>
-          <div className='second-session'>Está incluso nesse plano</div>
-          <ul>
-            <li>
-              <RiCheckLine />
-              <span> 1 Campanha ativa </span>
-            </li>
-            <li>
-              <RiCheckLine />
-              <span> 3 Links por campanha </span>
-            </li>
-            <li>
-              <RiCloseLine />
-              <span> Tracking de leads  </span>
-            </li>
-            <li>
-              <RiCloseLine />
-              <span> Gráficos de acesso  </span>
-            </li>
-          </ul>
-  </CardPlan>**/}
+  </CardPlan>
       </PricingContainer>
     </Section>
   )
