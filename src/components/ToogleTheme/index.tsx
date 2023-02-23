@@ -32,6 +32,7 @@ export const ToogleButton = styled.button`
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  z-index: 2;
 
   border: 2px solid ${props => props.theme.colors.text};
 
