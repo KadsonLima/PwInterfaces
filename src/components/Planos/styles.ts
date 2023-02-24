@@ -2,12 +2,11 @@ import styled from 'styled-components';
 
 export const PricingContainer = styled.section`
   max-width: 1120px;
-  height: 35rem;
   margin: 0 auto;
   padding: 4rem 2rem;
-  gap: 80px;
+  gap: 30px;
   text-align: center;
-
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   justify-content: center;

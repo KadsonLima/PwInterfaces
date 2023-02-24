@@ -36,10 +36,6 @@ export default function Planos({bgTitle, scheme}:PlanosType) {
               <span> {scheme.checks[1]}</span>
             </li>
             <li>
-              <RiCheckLine />
-              <span> Trainer 10 days Test</span>
-            </li>
-            <li>
               <RiCloseLine />
               <span> {scheme.checks[2]}</span>
             </li>
@@ -60,10 +56,6 @@ export default function Planos({bgTitle, scheme}:PlanosType) {
             <li>
               <RiCheckLine />
               <span> Unique UI</span>
-            </li>
-            <li>
-              <RiCheckLine />
-              <span> Trainer 10 days Test</span>
             </li>
             <li>
               <RiCloseLine />
