@@ -31,7 +31,11 @@ export const Button = styled.button`
   }
 
   @media only screen and (max-width: 768px) {
-      display: none;
-      visibility: hidden;
+      font-size: xx-small;
+      width: 10%;
+      border-radius: 6px;
+      svg{
+        display: none;
+      }
     }
 `;
