@@ -54,7 +54,6 @@ function RadioWithImage() {
           onChange={handleOptionChange}
           value="Outro"
         />
-        <Image width={64} height={64} src="https://w7.pngwing.com/pngs/629/58/png-transparent-question-mark-question-mark-wikimedia-commons-information-openoffice-draw.png" alt="radio Image" />
         Outro: {selectedOption === 'Outro' && <input />}
       </label>
       
@@ -65,18 +64,23 @@ function RadioWithImage() {
 export default RadioWithImage;
 
 const Div = styled.div`
-    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 300px;
     display: flex;
     flex-wrap: nowrap;
     display: 100%;
     max-width: 740px;
     img{
-        width: 64px;
         border-radius: 50%;
     }
     overflow-y: scroll;
 
     label{
         width: 165px;
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 `

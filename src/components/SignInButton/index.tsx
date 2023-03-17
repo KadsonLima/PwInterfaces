@@ -60,19 +60,19 @@ const Form = styled.form`
     display: flex;
     gap: 30px;
     justify-content: center;
+    margin-bottom: 10px;
   }
 `
 
 const Modal = styled.div`
   position: fixed;
-  width: 80%;
+  max-width: 775px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   top: 90px;
   background-color: ${(props) => props.theme.colors.background};
-  height: 500px;
   z-index: 4;
   border-radius: 15px;
   border: 2px solid #9999;
