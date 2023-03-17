@@ -12,6 +12,14 @@ const nextConfig = {
         protocol: 'https',
         hostname:'i.ytimg.com'
       },
+      {
+        protocol: 'https',
+        hostname:'cdn.discordapp.com'
+      },
+      {
+        protocol: 'https',
+        hostname:'w7.pngwing.com'
+      }
     ],
   },
 };
