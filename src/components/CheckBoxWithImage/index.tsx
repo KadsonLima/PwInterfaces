@@ -65,10 +65,10 @@ function RadioWithImage() {
 export default RadioWithImage;
 
 const Div = styled.div`
+    overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
     display: 100%;
-    height: 600px;
     max-width: 740px;
     img{
         width: 64px;
