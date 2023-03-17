@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
@@ -17,7 +18,7 @@ function radioWithImage() {
           onChange={handleOptionChange}
           value="History"
         />History
-        <img src="https://cdn.discordapp.com/icons/925136890926075964/cb0d7e0ba7f5e63e182c7bc9d85aef1e.webp" alt="radio Image" />
+        <Image src="https://cdn.discordapp.com/icons/925136890926075964/cb0d7e0ba7f5e63e182c7bc9d85aef1e.webp" alt="radio Image" />
       </label>
       <label>
         <input
@@ -26,7 +27,7 @@ function radioWithImage() {
           onChange={handleOptionChange}
           value="Asgard"
         />Asgard
-        <img src="https://cdn.discordapp.com/icons/1032494167571574844/5aa185249e4b4b8f9bab392aa7cbc53c.webp" alt="radio Image" />
+        <Image src="https://cdn.discordapp.com/icons/1032494167571574844/5aa185249e4b4b8f9bab392aa7cbc53c.webp" alt="radio Image" />
       </label>
       <label>
         <input
@@ -35,7 +36,7 @@ function radioWithImage() {
           onChange={handleOptionChange}
           value="The Classic"
         />The Classic
-        <img src="https://cdn.discordapp.com/icons/762114374885179392/0fb522f68e22d0090ed0cd55c531ade0.webp" alt="radio Image" />
+        <Image src="https://cdn.discordapp.com/icons/762114374885179392/0fb522f68e22d0090ed0cd55c531ade0.webp" alt="radio Image" />
       </label>
       <label>
         <input
@@ -44,7 +45,7 @@ function radioWithImage() {
           onChange={handleOptionChange}
           value="Funline"
         />Funline
-        <img src="https://cdn.discordapp.com/icons/1049120280410345542/e08005a5a8c58932aed079206ddc922b.webp" alt="radio Image" />
+        <Image src="https://cdn.discordapp.com/icons/1049120280410345542/e08005a5a8c58932aed079206ddc922b.webp" alt="radio Image" />
       </label>
       <label>
         <input
@@ -53,7 +54,7 @@ function radioWithImage() {
           onChange={handleOptionChange}
           value="Outro"
         />
-        <img src="https://w7.pngwing.com/pngs/629/58/png-transparent-question-mark-question-mark-wikimedia-commons-information-openoffice-draw.png" alt="radio Image" />
+        <Image src="https://w7.pngwing.com/pngs/629/58/png-transparent-question-mark-question-mark-wikimedia-commons-information-openoffice-draw.png" alt="radio Image" />
         Outro: {selectedOption === 'Outro' && <input />}
       </label>
       
@@ -69,7 +70,7 @@ const Div = styled.div`
     display: 100%;
     height: 600px;
     max-width: 740px;
-    img{
+    Image{
         width: 64px;
         border-radius: 50%;
     }
