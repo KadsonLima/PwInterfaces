@@ -70,7 +70,7 @@ const Div = styled.div`
     display: 100%;
     height: 600px;
     max-width: 740px;
-    Image{
+    img{
         width: 64px;
         border-radius: 50%;
     }
