@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-function radioWithImage() {
+function RadioWithImage() {
     const [selectedOption, setSelectedOption] = useState('');
 
   const handleOptionChange = (event:any) => {
@@ -62,7 +62,7 @@ function radioWithImage() {
   );
 }
 
-export default radioWithImage;
+export default RadioWithImage;
 
 const Div = styled.div`
     display: flex;
