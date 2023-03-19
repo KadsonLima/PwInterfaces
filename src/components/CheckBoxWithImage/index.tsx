@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-function RadioWithImage() {
+function CheckBoxWithImage() {
     const [selectedOption, setSelectedOption] = useState('');
 
   const handleOptionChange = (event:any) => {
@@ -54,21 +54,20 @@ function RadioWithImage() {
           onChange={handleOptionChange}
           value="Outro"
         />
-        Outro: {selectedOption === 'Outro' && <input />}
+         {selectedOption === 'Outro' ? <input /> : "Outro"}
       </label>
       
     </Div>
   );
 }
 
-export default RadioWithImage;
+export default CheckBoxWithImage;
 
 const Div = styled.div`
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    height: 300px;
+overflow: auto;
     display: flex;
     flex-wrap: nowrap;
+    column-gap: 30px;
     display: 100%;
     max-width: 740px;
     img{

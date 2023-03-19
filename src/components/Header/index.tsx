@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { ActiveLink } from '../ActiveLink'
-import { SignInButton } from "../SignInButton"
+import { SignInButton } from "../FormButton"
 import { HeaderContainer, HeaderContent, Nav } from "./styles"
 
 export function Header() {
