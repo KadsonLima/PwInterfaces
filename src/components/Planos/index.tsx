@@ -1,6 +1,5 @@
-import { RiArrowUpCircleLine, RiCheckLine, RiCloseLine } from 'react-icons/ri'
-import { CallToAction } from '../CallToAction'
-import { HeroBenefits } from '../HeroBenefits'
+import { RiCheckLine, RiCloseLine } from 'react-icons/ri'
+
 import { CardPlan, PricingContainer, Section } from './styles'
 
 interface PlanosType{

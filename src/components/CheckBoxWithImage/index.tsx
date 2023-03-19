@@ -11,50 +11,50 @@ function CheckBoxWithImage() {
 
   return (
     <Div>
-      <label>
+      <label className={selectedOption === 'History' ? "ativado" : "desativado"}>
         <input
           type="radio"
           checked={selectedOption === 'History'}
           onChange={handleOptionChange}
           value="History"
         />History
-        <Image width={64} height={64} src="https://cdn.discordapp.com/icons/925136890926075964/cb0d7e0ba7f5e63e182c7bc9d85aef1e.webp" alt="radio Image" />
+        <Image width={32} height={32} src="https://cdn.discordapp.com/icons/925136890926075964/cb0d7e0ba7f5e63e182c7bc9d85aef1e.webp" alt="radio Image" />
       </label>
-      <label>
+      <label className={selectedOption === 'Asgard' ? "ativado" : "desativado"}>
         <input
           type="radio"
           checked={selectedOption === 'Asgard'}
           onChange={handleOptionChange}
           value="Asgard"
         />Asgard
-        <Image width={64} height={64} src="https://cdn.discordapp.com/icons/1032494167571574844/5aa185249e4b4b8f9bab392aa7cbc53c.webp" alt="radio Image" />
+        <Image width={32} height={32} src="https://cdn.discordapp.com/icons/1032494167571574844/5aa185249e4b4b8f9bab392aa7cbc53c.webp" alt="radio Image" />
       </label>
-      <label>
+      <label className={selectedOption === 'The Classic' ? "ativado" : "desativado"}>
         <input
           type="radio"
           checked={selectedOption === 'The Classic'}
           onChange={handleOptionChange}
           value="The Classic"
         />The Classic
-        <Image width={64} height={64} src="https://cdn.discordapp.com/icons/762114374885179392/0fb522f68e22d0090ed0cd55c531ade0.webp" alt="radio Image" />
+        <Image width={32} height={32} src="https://cdn.discordapp.com/icons/762114374885179392/0fb522f68e22d0090ed0cd55c531ade0.webp" alt="radio Image" />
       </label>
-      <label>
+      <label className={selectedOption === 'Funline' ? "ativado" : "desativado"}>
         <input
           type="radio"
           checked={selectedOption === 'Funline'}
           onChange={handleOptionChange}
           value="Funline"
         />Funline
-        <Image width={64} height={64} src="https://cdn.discordapp.com/icons/1049120280410345542/e08005a5a8c58932aed079206ddc922b.webp" alt="radio Image" />
+        <Image width={32} height={32} src="https://cdn.discordapp.com/icons/1049120280410345542/e08005a5a8c58932aed079206ddc922b.webp" alt="radio Image" />
       </label>
-      <label>
+      <label className={selectedOption === 'Outro' ? "ativado" : "desativado"}>
         <input
           type="radio"
           checked={selectedOption === 'Outro'}
           onChange={handleOptionChange}
           value="Outro"
         />
-         {selectedOption === 'Outro' ? <input /> : "Outro"}
+         {selectedOption === 'Outro' ? <>Nome do Server :<input /></> : "Outro"}
       </label>
       
     </Div>
@@ -64,10 +64,10 @@ function CheckBoxWithImage() {
 export default CheckBoxWithImage;
 
 const Div = styled.div`
-overflow: auto;
+    overflow: auto;
     display: flex;
     flex-wrap: nowrap;
-    column-gap: 30px;
+    gap: 10px;
     display: 100%;
     max-width: 740px;
     img{
@@ -76,9 +76,27 @@ overflow: auto;
     overflow-y: scroll;
 
     label{
-        height: 90px;
+      min-width: 145px;
+      height: 48px;
         display: flex;
+        gap: 6px;
         justify-content: space-around;
         align-items: center;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 6px;
     }
+
+    input[type="radio"]{
+      display: none;
+    }
+
+    .ativado{
+      border: 2px solid #ffe603f4;
+    }
+
+    .desativado{
+      border: 2px solid #f4f4f4f4;
+    }
+
 `
