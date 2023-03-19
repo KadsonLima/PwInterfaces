@@ -76,7 +76,6 @@ overflow: auto;
     overflow-y: scroll;
 
     label{
-        width: 165px;
         height: 90px;
         display: flex;
         justify-content: space-around;
