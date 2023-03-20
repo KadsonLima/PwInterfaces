@@ -159,6 +159,24 @@ const Modal = styled.div`
     gap: 30px;
     width: 100%;
   }
+
+  
+  @media only screen and (max-width: 768px) {
+    top: 0;
+  bottom: 0;  
+  height: 100hv;
+  border-radius: 0%;
+  border: none;
+
+  } 
+
+     
+  h3, h1{
+    color: rgb(250, 163, 7);
+    font-weight: 700;
+    font-family: "Gill Sans", sans-serif;
+    }
+
 `;
 
 const CloseButton = styled.button`

@@ -86,6 +86,5 @@ const Div = styled.div`
         border-radius: 6px;
     }
 
-  
-
+ 
 `
