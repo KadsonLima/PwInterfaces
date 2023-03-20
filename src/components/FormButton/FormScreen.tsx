@@ -15,11 +15,12 @@ export function FormUi({ showModal, setShowModal }: FormUi) {
   };
 
   return (
+    <Container>
     <Modal>
       <h1>Pedido</h1>
       <Form>
         <div className="info">
-          <label>Nick :</label> <input />
+          <label>Nome :</label> <input />
           <label>Contato : </label>
           <input />
         </div>
@@ -30,7 +31,7 @@ export function FormUi({ showModal, setShowModal }: FormUi) {
         <div className="service">
           <h3>Serviço: </h3>
           <div>
-            <label>
+          <label className={selectedOption === 'convert' ? "ativado" : "desativado"}>
               <input
                 type="radio"
                 checked={selectedOption === "convert"}
@@ -39,7 +40,7 @@ export function FormUi({ showModal, setShowModal }: FormUi) {
               />{" "}
               Converter Interface <span>R$50,00</span>
             </label>
-            <label>
+            <label className={selectedOption === 'create' ? "ativado" : "desativado"}>
               <input
                 type="radio"
                 checked={selectedOption === "create"}
@@ -62,8 +63,20 @@ export function FormUi({ showModal, setShowModal }: FormUi) {
         </CloseButton>
       </div>
     </Modal>
+    </Container>
   );
 }
+
+const Container = styled.div`
+position: fixed;
+left: 0;
+top: 0;
+bottom: 0;
+z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.719);
+`
 
 const Form = styled.form`
   display: flex;
@@ -100,12 +113,20 @@ const Form = styled.form`
 
   .service {
     gap: 10px;
-    label {
-        width: 210px;
+    div{
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 6px;
+      gap: 20px;
+    }
+    label {
+      min-width: 145px;
+      min-height: 48px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        padding: 3px 10px;
+        border-radius: 6px;
+    flex-direction: column;
     }
   }
 `;

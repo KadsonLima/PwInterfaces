@@ -11,14 +11,14 @@ import { CallActionButton, HomeHero } from "../styles/home";
 import {useState} from 'react'
 import { LanguageButton } from "../components/LanguageButton";
 import Languages from '../assets/home.json'
-import { VideosAll } from "../components/VideosAll/VideosAll";
 
 const Home: NextPage = () => {
   const [locale, setLocale] = useState("pt-BR");
-
   const {[0]:currentLanguage} = Languages.languages.filter((language)=>(language.locale === locale))
 
   return (
+
+
     <>
       <Head>
         <title>KasH | Customizações UI | Lives | Widgets</title>

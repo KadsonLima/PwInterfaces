@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 function CheckBoxWithImage() {
     const [selectedOption, setSelectedOption] = useState('');
-
+    
   const handleOptionChange = (event:any) => {
     setSelectedOption(event.target.value);
   };
@@ -56,7 +56,6 @@ function CheckBoxWithImage() {
         />
          {selectedOption === 'Outro' ? <>Nome do Server :<input /></> : "Outro"}
       </label>
-      
     </Div>
   );
 }
@@ -87,16 +86,6 @@ const Div = styled.div`
         border-radius: 6px;
     }
 
-    input[type="radio"]{
-      display: none;
-    }
-
-    .ativado{
-      border: 2px solid #ffe603f4;
-    }
-
-    .desativado{
-      border: 2px solid #f4f4f4f4;
-    }
+  
 
 `

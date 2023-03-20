@@ -63,4 +63,24 @@ export default createGlobalStyle`
 
 
   } 
+
+  input[type="radio"]{
+      display: none;
+    }
+
+    .ativado{
+      border: 2px solid #6a040f;
+      background-color: #faa307;
+      color: #9d0208;
+      box-shadow: 0 8px 16px 0 #9d0208, 0 6px 20px 0 #9d0208;
+      font-weight: 600;
+    }
+
+    .desativado{
+      border: 2px solid #4a4e69;
+      background-color: #03071e;
+      font-weight: 600;
+    }
+
+   
 `;

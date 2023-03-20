@@ -1,4 +1,3 @@
-import { lighten } from "polished";
 import styled from "styled-components";
 
 interface FlagChecked {
@@ -10,7 +9,6 @@ export const FlagCountry = styled.div<FlagChecked>`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
     img{
     width: 15px;
     height: auto;
