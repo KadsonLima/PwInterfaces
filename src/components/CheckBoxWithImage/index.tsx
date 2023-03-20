@@ -2,11 +2,18 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-function CheckBoxWithImage() {
+
+
+interface ServerPW {
+  setServerPW:Function
+}
+
+function CheckBoxWithImage({setServerPW}:ServerPW){
     const [selectedOption, setSelectedOption] = useState('');
     
   const handleOptionChange = (event:any) => {
     setSelectedOption(event.target.value);
+    setServerPW(event.target.value);
   };
 
   return (
@@ -14,6 +21,7 @@ function CheckBoxWithImage() {
       <label className={selectedOption === 'History' ? "ativado" : "desativado"}>
         <input
           type="radio"
+          name='history'
           checked={selectedOption === 'History'}
           onChange={handleOptionChange}
           value="History"
@@ -23,6 +31,7 @@ function CheckBoxWithImage() {
       <label className={selectedOption === 'Asgard' ? "ativado" : "desativado"}>
         <input
           type="radio"
+          name='asgard'
           checked={selectedOption === 'Asgard'}
           onChange={handleOptionChange}
           value="Asgard"
@@ -32,6 +41,7 @@ function CheckBoxWithImage() {
       <label className={selectedOption === 'The Classic' ? "ativado" : "desativado"}>
         <input
           type="radio"
+          name='classic'
           checked={selectedOption === 'The Classic'}
           onChange={handleOptionChange}
           value="The Classic"
@@ -41,20 +51,12 @@ function CheckBoxWithImage() {
       <label className={selectedOption === 'Funline' ? "ativado" : "desativado"}>
         <input
           type="radio"
+          name='funline'
           checked={selectedOption === 'Funline'}
           onChange={handleOptionChange}
           value="Funline"
         />Funline
         <Image width={32} height={32} src="https://cdn.discordapp.com/icons/1049120280410345542/e08005a5a8c58932aed079206ddc922b.webp" alt="radio Image" />
-      </label>
-      <label className={selectedOption === 'Outro' ? "ativado" : "desativado"}>
-        <input
-          type="radio"
-          checked={selectedOption === 'Outro'}
-          onChange={handleOptionChange}
-          value="Outro"
-        />
-         {selectedOption === 'Outro' ? <>Nome do Server :<input /></> : "Outro"}
       </label>
     </Div>
   );

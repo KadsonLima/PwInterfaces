@@ -15,10 +15,10 @@ export function Header() {
           height={62.5} />
         <Nav>
           <ActiveLink activeClassName="active" href="/" key="home">
-            <Link href="">Home</Link >
+            <a>Home</a >
           </ActiveLink>
            <ActiveLink activeClassName="active" href="/gallery" key="home" prefetch>
-           <Link href="">Gallery</Link >
+           <a>Gallery</a >
           </ActiveLink> 
           {//<ActiveLink activeClassName="active" href="/trainer" prefetch><a>Trainer</a>     </ActiveLink> 
           }
