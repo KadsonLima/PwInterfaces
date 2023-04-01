@@ -18,7 +18,18 @@ function CheckBoxWithImage({setServerPW}:ServerPW){
 
   return (
     <Div>
-     {/* <label className={selectedOption === 'Asgard' ? "ativado" : "desativado"}>
+      {/* <label className={selectedOption === 'History' ? "ativado" : "desativado"}>
+        <input
+          type="radio"
+          name='history'
+          checked={selectedOption === 'History'}
+          onChange={handleOptionChange}
+          value="History"
+        />History
+        <Image width={32} height={32} src="https://cdn.discordapp.com/icons/925136890926075964/cb0d7e0ba7f5e63e182c7bc9d85aef1e.webp" alt="radio Image" />
+      </label> */}
+      
+      <label className={selectedOption === 'Asgard' ? "ativado" : "desativado"}>
         <input
           type="radio"
           name='asgard'
@@ -27,7 +38,7 @@ function CheckBoxWithImage({setServerPW}:ServerPW){
           value="Asgard"
         />Asgard
         <Image width={32} height={32} src="https://cdn.discordapp.com/icons/1032494167571574844/5aa185249e4b4b8f9bab392aa7cbc53c.webp" alt="radio Image" />
-      </label> */}
+      </label>
       <label className={selectedOption === 'The Classic' ? "ativado" : "desativado"}>
         <input
           type="radio"
