@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </Head>
       <HomeHero>
       <LanguageButton locale={locale} setLocale={setLocale} />
-
+        
         <div className="casa">
           <Image src={Abissal} alt="Abissal" />
           <Image src={Woman} alt="mulher" />

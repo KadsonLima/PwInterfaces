@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from "styled-components";
-
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import GlobalStyle from '../styles/global';
@@ -15,6 +15,16 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
       <ThemeProvider theme={theme}>
+      <ToastContainer position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme={'dark'}/>
         <ToogleTheme theme={theme} setTheme={setTheme}/>
           <GlobalStyle />
           <Header />

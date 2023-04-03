@@ -2,6 +2,8 @@ import CheckBoxWithImage from "../../CheckBoxWithImage";
 import { Container, Modal, Form, CloseButton, SendButton } from "./styles";
 import { useState } from "react";
 import axios from "axios";
+import { RotatingLines } from "react-loader-spinner";
+import { toast, ToastContainer } from "react-toastify";
 
 interface FormUi {
   showModal: boolean;
@@ -48,16 +50,17 @@ export function FormUi({ showModal, setShowModal }: FormUi) {
         },
       })
       .then((data) => {
-        setLoading(false);
+        setShowModal(false);
+        toast.success("Enviado com Sucesso !!");
+      })
+      .catch((error)=>{
+        toast.error(`Falha ao Enviar o Formulario!! ${error.message}`);
       });
   }
   return (
     <Container>
       <Modal>
-        <h1>Pedido</h1>
-        {loading ? (
-          "Enviando..."
-        ) : (
+          <h1>Pedido</h1>
           <Form onSubmit={handleSubmit}>
             <div className="info">
               <label>Nome :</label>{" "}
@@ -127,7 +130,6 @@ export function FormUi({ showModal, setShowModal }: FormUi) {
               </CloseButton>
             </div>
           </Form>
-        )}
       </Modal>
     </Container>
   );
