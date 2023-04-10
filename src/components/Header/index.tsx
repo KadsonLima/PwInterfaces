@@ -8,17 +8,24 @@ export function Header() {
   return (
     <HeaderContainer>
       <HeaderContent>
+      <Link href="/">
+      <a>
         <Image 
           src="/images/light.png" 
           alt="KasH" 
           width={59} 
           height={62.5} />
+          </a>
+          </Link>
         <Nav>
           <ActiveLink activeClassName="active" href="/" key="home">
             <a>Home</a >
           </ActiveLink>
-           <ActiveLink activeClassName="active" href="/gallery" key="home" prefetch>
+          <ActiveLink activeClassName="active" href="/gallery" key="gallery" prefetch>
            <a>Gallery</a >
+          </ActiveLink>
+           <ActiveLink activeClassName="active" href="/theclassicpw" key="theClassicPw" prefetch>
+           <a>TheClassic</a >
           </ActiveLink> 
           {//<ActiveLink activeClassName="active" href="/trainer" prefetch><a>Trainer</a>     </ActiveLink> 
           }

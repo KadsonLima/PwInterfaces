@@ -82,5 +82,6 @@ export default createGlobalStyle`
       font-weight: 600;
     }
 
+    
    
 `;

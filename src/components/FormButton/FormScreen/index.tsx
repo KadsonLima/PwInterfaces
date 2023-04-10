@@ -2,8 +2,7 @@ import CheckBoxWithImage from "../../CheckBoxWithImage";
 import { Container, Modal, Form, CloseButton, SendButton } from "./styles";
 import { useState } from "react";
 import axios from "axios";
-import { RotatingLines } from "react-loader-spinner";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 
 interface FormUi {
   showModal: boolean;
