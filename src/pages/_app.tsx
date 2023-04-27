@@ -8,13 +8,14 @@ import GlobalStyle from '../styles/global';
 import { ToogleTheme } from '../components/ToogleTheme';
 import { useState } from 'react';
 import dark from '../styles/themes/dark';
-
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = useState(dark);
 
   return (
       <ThemeProvider theme={theme}>
+        <Analytics />
       <ToastContainer position="top-right"
 autoClose={5000}
 hideProgressBar={false}
