@@ -65,7 +65,7 @@ export const Section = styled.section`
   .planos{
     width: 100%;
     height: 400px;
-    background-image: url('/images/planos.png');
+    background-image: url('https://cdn.discordapp.com/attachments/1107719283150164059/1107720546050904135/KasH_perfect_world_game_background_art_splash_art_73985459-c609-405f-ba9d-b2440168e881.png');
     background-repeat:no-repeat;
     background-size: cover;
     border-bottom: 5px solid #e5e5e5;

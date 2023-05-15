@@ -101,16 +101,42 @@ export function FormUi({ showModal, setShowModal }: FormUi) {
                 </label>
                 <label
                   className={
-                    selectedOption === "create" ? "ativado" : "desativado"
+                    selectedOption === "createIndividualSimple" ? "ativado" : "desativado"
                   }
                 >
                   <input
                     type="radio"
-                    checked={selectedOption === "create"}
+                    checked={selectedOption === "createIndividualSimple"}
                     onChange={handleOptionChange}
-                    value="create"
+                    value="createIndividualSimple"
                   />{" "}
-                  Cria Interface<span> R$150,00</span>
+                  Ui Individual<span> R$150,00</span>
+                </label>
+                <label
+                  className={
+                    selectedOption === "createIndividualPremium" ? "ativado" : "desativado"
+                  }
+                >
+                  <input
+                    type="radio"
+                    checked={selectedOption === "createIndividualPremium"}
+                    onChange={handleOptionChange}
+                    value="createIndividualPremium"
+                  />{" "}
+                  Ui Individual - Premium<span> R$200,00</span>
+                </label>
+                <label
+                  className={
+                    selectedOption === "createGuildPremium" ? "ativado" : "desativado"
+                  }
+                >
+                  <input
+                    type="radio"
+                    checked={selectedOption === "createGuildPremium"}
+                    onChange={handleOptionChange}
+                    value="createGuildPremium"
+                  />{" "}
+                  Ui Guild - Premium<span> R$250,00</span>
                 </label>
               </div>
             </div>

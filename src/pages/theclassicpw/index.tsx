@@ -1,13 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { useState } from "react";
 import styled from "styled-components";
-import Languages from "../../assets/home.json";
-import { HomeHero } from "../../styles/home";
 import UiFree from "../../../public/images/UiFree.jpg";
-import FlyGif from "../../../public/images/gif/fly-burst.gif";
-import NickGif from "../../../public/images/gif/nickhack.gif";
 
 const Home: NextPage = () => {
   return (

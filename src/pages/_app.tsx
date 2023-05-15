@@ -26,7 +26,6 @@ pauseOnFocusLoss
 draggable
 pauseOnHover
 theme={'dark'}/>
-        <ToogleTheme theme={theme} setTheme={setTheme}/>
           <GlobalStyle />
           <Header />
           <Component {...pageProps} />

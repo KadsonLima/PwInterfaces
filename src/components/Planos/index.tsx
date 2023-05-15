@@ -62,6 +62,58 @@ export default function Planos({bgTitle, scheme}:PlanosType) {
             </li>
           </ul>
   </CardPlan>
+  <CardPlan>
+          <p>UI Individual - Premium</p>
+          <div>
+            <h3>R$ 200,00</h3>
+            <p>Criação de interface personalizada.</p>
+          </div>
+          <div className='second-session'>Está incluso nesse plano</div>
+          <ul>
+            <li>
+              <RiCheckLine />
+              <span> Map, HP, Target, Bars Custom</span>
+            </li>
+            <li>
+              <RiCheckLine />
+              <span> Unique UI</span>
+            </li>
+            <li>
+              <RiCheckLine />
+              <span> Abas Customizadas </span>
+            </li>
+            <li>
+              <RiCheckLine />
+              <span> Telas dos Atalhos: T , G , F, C , B </span>
+            </li>
+          </ul>
+  </CardPlan>
+  <CardPlan>
+          <p>UI Guild - Premium</p>
+          <div>
+            <h3>R$ 250,00</h3>
+            <p>Criação de interface personalizada.</p>
+          </div>
+          <div className='second-session'>Está incluso nesse plano</div>
+          <ul>
+            <li>
+              <RiCheckLine />
+              <span> Map, HP, Target, Bars Custom</span>
+            </li>
+            <li>
+              <RiCheckLine />
+              <span> Unique UI</span>
+            </li>
+            <li>
+              <RiCheckLine />
+              <span> Abas Customizadas </span>
+            </li>
+            <li>
+              <RiCheckLine />
+              <span> Telas dos Atalhos: T , G , F, C , B </span>
+            </li>
+          </ul>
+  </CardPlan>
       </PricingContainer>
     </Section>
   )
