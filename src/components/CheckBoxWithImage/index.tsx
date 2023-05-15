@@ -75,7 +75,7 @@ const Div = styled.div`
     img{
         border-radius: 50%;
     }
-    overflow-y: scroll;
+    overflow-y: auto;
 
     label{
       min-width: 145px;

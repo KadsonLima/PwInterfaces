@@ -89,7 +89,7 @@ export const Modal = styled.div`
   max-width: 775px;
   margin-left: auto;
   margin-right: auto;
-  overflow-y: scroll;
+  overflow-y: auto;
   left: 0;
   right: 0;
   top: 10px;
