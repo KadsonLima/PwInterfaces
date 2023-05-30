@@ -7,18 +7,21 @@ import {
 import { Home , Shop} from './paths'
 import { Loading } from '@components/Loading/index'
 import { ChakraProvider } from '@chakra-ui/react'
+import { Analytics } from '@vercel/analytics/react'
 
 export const Routes = () => {
   return (
-    <Suspense fallback={<Loading/>}>
     <ChakraProvider >
+    <Suspense fallback={<Loading/>}>
+      <Analytics/>
       <RoutesReactRouterDom>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="*" element={<Navigate to="/404" />} />
       </RoutesReactRouterDom>
-      </ChakraProvider>
     </Suspense>
+
+      </ChakraProvider>
   )
 }
 

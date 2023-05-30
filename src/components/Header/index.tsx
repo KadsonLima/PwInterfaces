@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Box, Flex, IconButton, Image, Link, Text } from "@chakra-ui/react";
+import { useState } from "react";
+import { Box, Flex, IconButton, Image, Link } from "@chakra-ui/react";
 import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { stylesColor } from "@styles/colors";
 import Logo from "../../assets/images/light.png";

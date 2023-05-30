@@ -1,7 +1,6 @@
 import { Box, Image } from "@chakra-ui/react";
-import { stylesColor } from "@styles/colors";
 
-const DynamicBanner = ({ width, height, fitMode, image }: { width: number | string, height: number | string, image: string, fitMode: string }) => {
+const DynamicBanner = ({ width, height, fitMode, image }: { width: number | string, height: number | string, image: string, fitMode: any }) => {
   
   return (
     <Box  width={width} height={ height } position="relative" borderBottom={"2px"} borderBottomColor={"#860505"}>

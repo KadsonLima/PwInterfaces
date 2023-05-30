@@ -1,7 +1,6 @@
-import React from "react";
-import { Box, Flex, Text, useToken } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
-const HighlightBlock = ({ title, description }) => {
+const HighlightBlock = ({ title, description }:{title:string, description:string}) => {
 
 
   return (

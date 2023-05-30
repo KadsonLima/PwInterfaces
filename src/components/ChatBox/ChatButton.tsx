@@ -1,5 +1,5 @@
 import Logo from "../../assets/images/light.png";
-import { Box, Button, Flex, Image, keyframes,  useToken } from "@chakra-ui/react";
+import { Box, Flex, Image, keyframes,  useToken } from "@chakra-ui/react";
 import { useState } from "react";
 
 interface ChatButtonProps {

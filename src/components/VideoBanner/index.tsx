@@ -1,4 +1,4 @@
-import { Box, Text, SimpleGrid, AspectRatio, useToken } from "@chakra-ui/react";
+import { Box, Text, SimpleGrid, AspectRatio } from "@chakra-ui/react";
 import { keyframesAnimations} from "@styles/keyframes";
 
 const VideoBanner = () => {
