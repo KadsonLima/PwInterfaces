@@ -15,7 +15,7 @@ const dark = {
     blue: '#81d742',
 
 
-    background: '#202020',
+    background: '#060606',
     text: '#eeeeee',
     text2: '#eeeeee',
 

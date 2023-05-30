@@ -6,21 +6,20 @@ export const HeaderContainer = styled.header`
 `;
 
 export const HeaderContent = styled.div`
-  max-width: 1120px;
+  max-width: 1501px;
   height: 5rem;
   margin: 0 auto;
   padding: 0 2rem;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   button {
     margin-left: auto;
   }
 `;
 
 export const Nav = styled.nav`
-  margin-left: 5rem;
   height: 5rem;
   a {
     display: inline-block;

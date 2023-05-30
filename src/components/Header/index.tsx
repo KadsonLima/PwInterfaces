@@ -8,15 +8,6 @@ export function Header() {
   return (
     <HeaderContainer>
       <HeaderContent>
-      <Link href="/">
-      <a>
-        <Image 
-          src="/images/light.png" 
-          alt="KasH" 
-          width={59} 
-          height={62.5} />
-          </a>
-          </Link>
         <Nav>
           <ActiveLink activeClassName="active" href="/" key="home">
             <a>Home</a >
@@ -30,6 +21,15 @@ export function Header() {
           {//<ActiveLink activeClassName="active" href="/trainer" prefetch><a>Trainer</a>     </ActiveLink> 
           }
         </Nav>
+        <Link href="/">
+      <a>
+        <Image 
+          src="/images/light.png" 
+          alt="KasH" 
+          width={59} 
+          height={62.5} />
+          </a>
+          </Link>
         <SignInButton />
       </HeaderContent>
     </HeaderContainer>

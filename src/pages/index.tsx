@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import Woman from "../../public/images/mulher.png";
-import Abissal from "../../public/images/racas_abissal_ilustracao.png";
 import Head from "next/head";
 import { FcSurvey } from "react-icons/fc";
 import { HeroBenefits } from "../components/HeroBenefits";
@@ -9,7 +7,6 @@ import { FaTelegram , FaWhatsapp} from "react-icons/fa";
 import Planos from "../components/Planos";
 import { CallActionButton, HomeHero } from "../styles/home";
 import {useState} from 'react'
-import { LanguageButton } from "../components/LanguageButton";
 import Languages from '../assets/home.json'
 
 const Home: NextPage = () => {
@@ -24,7 +21,6 @@ const Home: NextPage = () => {
         <title>KasH | Customizações UI | Lives | Widgets</title>
       </Head>
       <HomeHero>
-      <LanguageButton locale={locale} setLocale={setLocale} />
         <span>
           {currentLanguage.title}
         </span>
