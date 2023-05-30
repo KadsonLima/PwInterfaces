@@ -1,5 +1,4 @@
 import { Box, Text, Button, Flex } from "@chakra-ui/react";
-import { stylesColor } from "@styles/colors";
 import { useState } from "react";
 
 interface ChatWindowProps {
