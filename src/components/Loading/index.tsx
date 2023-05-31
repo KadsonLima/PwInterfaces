@@ -10,7 +10,7 @@ export const Loading = () => {
       width="100%"
       minHeight="100vh"
     >
-      <Spinner thickness="4px" speed="0.65s" color={stylesColor.primaryColor} size="xs" />
+      <Spinner thickness="10px" speed="0.65s" color={stylesColor.primaryColor} size="40%" />
     </Flex>
   );
 };
