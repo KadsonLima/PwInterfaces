@@ -43,7 +43,7 @@ const Header = () => {
       {/* Rotas no desktop */}
       <Flex display={{ base: "none", md: "flex" }} align="center">
         <Link href="/" color={stylesColor.primaryColor} marginRight={4} fontWeight="bold">Home</Link>
-        <Link href="/" color={stylesColor.primaryColor} marginRight={4} fontWeight="bold">Shop</Link>
+        <Link href="/shop" color={stylesColor.primaryColor} marginRight={4} fontWeight="bold">Shop</Link>
         <Link href="/" color={stylesColor.primaryColor} marginRight={4} fontWeight="bold">TheClassic</Link>
       </Flex>
 
