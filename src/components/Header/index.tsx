@@ -3,6 +3,7 @@ import { Box, Flex, IconButton, Image, Link } from "@chakra-ui/react";
 import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { stylesColor } from "@styles/colors";
 import Logo from "../../assets/images/light.png";
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
@@ -41,11 +42,32 @@ const Header = () => {
       <Image src={Logo}  alt="logo" height="100%"/>
 
       {/* Rotas no desktop */}
-      <Flex display={{ base: "none", md: "flex" }} align="center">
-        <Link href="/" color={stylesColor.primaryColor} marginRight={4} fontWeight="bold">Home</Link>
-        <Link href="/shop" color={stylesColor.primaryColor} marginRight={4} fontWeight="bold">Shop</Link>
-        <Link href="/" color={stylesColor.primaryColor} marginRight={4} fontWeight="bold">TheClassic</Link>
-      </Flex>
+      <Flex display={{ base: "none", md: "flex" }} align="center" gap={2}>
+      <Link
+        as={NavLink}
+        to="/"
+        color={stylesColor.primaryColor}
+        fontWeight="bold"
+      >
+        Home
+      </Link>
+      <Link
+        as={NavLink}
+        to="/shop"
+        color={stylesColor.primaryColor}
+        fontWeight="bold"
+      >
+        Shop
+      </Link>
+      <Link
+        as={NavLink}
+        to="/"
+        color={stylesColor.primaryColor}
+        fontWeight="bold"
+      >
+        TheClassic
+      </Link>
+    </Flex>
 
       {/* Botão de menu no mobile */}
       <Box display={{ base: "flex", md: "none" }} bg={stylesColor.backgroundColor}>
