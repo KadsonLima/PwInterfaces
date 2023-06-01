@@ -8,7 +8,7 @@ interface Product {
 
 const ProductSquare = ({ products }:{products:Product[]}) => {
   return (
-    <Grid w="100%" templateColumns="repeat(auto-fill, minmax(150px, 1fr))" gap={4}>
+    <Grid w="100%" templateColumns={{ base: "repeat(auto-fill, minmax(150px, 1fr))", md: "auto auto auto auto" }} gap={4}>
       {products.map((product) => (
         <Box
           key={product.name}

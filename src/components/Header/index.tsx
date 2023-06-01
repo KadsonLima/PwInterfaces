@@ -38,8 +38,14 @@ const Header = () => {
     
     >
       {/* Logo */}
-    
-      <Image src={Logo}  alt="logo" height="100%"/>
+      <Link
+        as={NavLink}
+        height="100%"
+        to="/"
+      > 
+        <Image src={Logo}  alt="logo" height="100%"/>
+      </Link>
+      
 
       {/* Rotas no desktop */}
       <Flex display={{ base: "none", md: "flex" }} align="center" gap={2}>
