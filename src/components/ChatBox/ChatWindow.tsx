@@ -28,6 +28,11 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
         },
       ],
     },
+    {
+      question: "Criar Interface",
+      answer: "Existem 4 carros disponíveis.",
+      quests: []
+    }
     // Adicione mais opções de interação aqui, se necessário
   ];
 

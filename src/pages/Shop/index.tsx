@@ -1,52 +1,44 @@
 import { Flex } from "@chakra-ui/react";
 import DynamicBanner from "@components/Banner";
-import MaintenanceModal from "@components/MaintenanceModal";
 import ProductSquare from "@components/ProductSquare";
 import { PageContainer } from "@components/pageContainer";
 
 const products = [
   {
-    name: "Produto 1",
+    name: "Naruto Ui",
     image:
-      "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png",
-    description: "Descrição do Produto 1",
+      "https://portalpopline.com.br/wp-content/uploads/2021/09/naruto-thumb.png",
+    description: "50,00 R$",
   },
   {
-    name: "Produto 2",
-    image:
-      "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png",
-    description: "Descrição do Produto 2",
+    name: "Sasuke Ui",
+    image:"https://img.quizur.com/f/img604644a9dd6d67.87221598.jpg?lastEdited=1615217842",
+    description: "50,00 R$",
   },
   {
-    name: "Produto 1",
+    name: "Itachi Ui",
     image:
-      "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png",
-    description: "Descrição do Produto 1",
+      "https://www.nawpic.com/media/2020/itachi-live-nawpic-2.jpg",
+      description: "50,00 R$",
   },
   {
-    name: "Produto 2",
+    name: "Criar Ui Basic",
     image:
-      "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png",
-    description: "Descrição do Produto 2",
+      "https://media.istockphoto.com/id/1163415141/pt/vetorial/gears-icon-red-background.jpg?s=170667a&w=0&k=20&c=M17L78qEAEkCM2uHFtUDGBlvByM6cLG2iNiYA1SwpJ0=",
+      description: "150,00 R$",
   },
   {
-    name: "Produto 1",
+    name: "Criar Ui Premium",
     image:
-      "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png",
-    description: "Descrição do Produto 1",
+      "https://media.istockphoto.com/id/828266632/pt/vetorial/golden-gear-vector-on-black-background.jpg?s=170667a&w=0&k=20&c=FMlrxjRluPhjqDYM1REC-dxX_mf4Hl4nSzl-l9_T96o=",
+      description: "200,00 R$",
   },
-  {
-    name: "Produto 2",
-    image:
-      "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png",
-    description: "Descrição do Produto 2",
-  },
+ 
 ];
 
 export const Shop = () => {
   return (
     <PageContainer>
-      <MaintenanceModal />
       <DynamicBanner
         title="Shop"
         width={"100%"}
@@ -54,7 +46,7 @@ export const Shop = () => {
         fitMode="cover"
         image="https://cdn.discordapp.com/attachments/1107719283150164059/1107720553877475399/KasH_perfect_world_game_background_art_splash_art_5687de61-1525-48bd-bfbc-37011139f7a7.png"
       />
-      <Flex p={8}>
+      <Flex p={4} height="80%">
         <ProductSquare products={products} />
       </Flex>
     </PageContainer>
