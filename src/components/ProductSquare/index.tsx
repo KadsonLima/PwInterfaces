@@ -35,7 +35,7 @@ const ProductSquare = ({ products }: { products: Product[] }) => {
               display: "block",
             }}
             position="relative"
-            backgroundColor={"#ffffffef"}
+            backgroundColor={"#6e6e6e89"}
             boxShadow="0 2px 4px rgb(87, 85, 85)"
             p={1}
             minHeight="300px" // Definindo uma altura mínima fixa
@@ -46,14 +46,14 @@ const ProductSquare = ({ products }: { products: Product[] }) => {
               objectFit="cover"
               borderBottom="2px solid #860505"
               w={"100%"}
-              height="150px"
+              height="220px"
               borderRadius="6px 6px 0 0"
             />
             <Flex p={1} alignItems="center" flexDirection="column" justifyContent="center">
               <Text fontWeight="bold" fontSize={{ base: "11px", md: "medium" }} color={"blackAlpha.800"}>
                 {product.name}
               </Text>
-              <Text fontSize="xs" mt={2} color={"blackAlpha.800"} display={{ base: "none", md: "block" }}>
+              <Text  mt={2} color={"blackAlpha.800"} fontSize={{ base: "xs", md: "xm" }}>
                 {product.description}
               </Text>
             </Flex>
