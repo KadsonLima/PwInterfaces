@@ -19,7 +19,7 @@ const ProductSquare = ({ products }: { products: Product[] }) => {
       }}
       gap={5}
       p="20px 20px"
-      bg={"whiteAlpha.800"}
+      bg={"#6e6e6e89"}
     >
       {products.map((product, index) => (
         <Link to={`/products/${index}`} key={index}>
@@ -35,7 +35,7 @@ const ProductSquare = ({ products }: { products: Product[] }) => {
               display: "block",
             }}
             position="relative"
-            backgroundColor={"#6e6e6e89"}
+            backgroundColor={"#dfd9d9"}
             boxShadow="0 2px 4px rgb(87, 85, 85)"
             p={1}
             minHeight="300px" // Definindo uma altura mínima fixa
