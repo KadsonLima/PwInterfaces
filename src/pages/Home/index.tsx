@@ -1,6 +1,5 @@
 import DynamicBanner from "@components/Banner"
 import CarouselComponent from "@components/Caroseul"
-import ChatContainer from "@components/ChatBox/ChatContainer"
 import ServiceHighlights from "@components/HighlightBlock"
 import VideoBanner from "@components/VideoBanner"
 import { PageContainer } from "@components/pageContainer"
