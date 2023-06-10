@@ -22,7 +22,7 @@ const ProductSquare = ({ products }: { products: Product[] }) => {
       bg={"#6e6e6e89"}
     >
       {products.map((product, index) => (
-        <Link to={`/products/${index}`} key={index}>
+        <Link to={`/product/${index}`} key={index}>
           <Box
             borderWidth="2px"
             borderColor="#860505"

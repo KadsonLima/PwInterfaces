@@ -4,7 +4,7 @@ import {
   Route,
   Routes as RoutesReactRouterDom,
 } from 'react-router-dom'
-import { Home , Shop} from './paths'
+import { Home , ProductPage, Shop} from './paths'
 import { Loading } from '@components/Loading/index'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Analytics } from '@vercel/analytics/react'
@@ -17,6 +17,7 @@ export const Routes = () => {
       <RoutesReactRouterDom>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/product/:id" element={<ProductPage />} />
         <Route path="*" element={<Navigate to="/404" />} />
       </RoutesReactRouterDom>
     </Suspense>

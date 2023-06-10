@@ -16,7 +16,6 @@ export const Home = () =>{
         <ServiceHighlights/>
         <VideoBanner/>
         <CarouselComponent/>
-        <ChatContainer/>
     </PageContainer>
 
 }

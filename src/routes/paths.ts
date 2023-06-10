@@ -12,6 +12,12 @@ export const Shop = lazy(() =>
   })),
 )
 
+export const ProductPage = lazy(() =>
+  import('../pages/ProductPage/').then(module => ({
+    default: module.ProductPage,
+  })),
+)
+
 export const Loading = lazy(() =>
   import('../components/Loading/').then(module => ({
     default: module.Loading,
