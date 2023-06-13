@@ -3,23 +3,26 @@ import DynamicBanner from "@components/Banner";
 import ProductSquare from "@components/ProductSquare";
 import { PageContainer } from "@components/pageContainer";
 
+
+
+// {
+//   name: "Sasuke Ui",
+//   image:"https://img.quizur.com/f/img604644a9dd6d67.87221598.jpg?lastEdited=1615217842",
+//   description: "50,00 R$",
+// },
+// {
+//   name: "Itachi Ui",
+//   image:
+//     "https://www.nawpic.com/media/2020/itachi-live-nawpic-2.jpg",
+//     description: "50,00 R$",
+// },
+
 const products = [
   {
     name: "Naruto Ui",
     image:
       "https://portalpopline.com.br/wp-content/uploads/2021/09/naruto-thumb.png",
     description: "50,00 R$",
-  },
-  {
-    name: "Sasuke Ui",
-    image:"https://img.quizur.com/f/img604644a9dd6d67.87221598.jpg?lastEdited=1615217842",
-    description: "50,00 R$",
-  },
-  {
-    name: "Itachi Ui",
-    image:
-      "https://www.nawpic.com/media/2020/itachi-live-nawpic-2.jpg",
-      description: "50,00 R$",
   },
   {
     name: "Criar Ui Basic",
