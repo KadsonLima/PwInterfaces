@@ -65,14 +65,6 @@ const Header = () => {
       >
         Shop
       </Link>
-      <Link
-        as={NavLink}
-        to="/"
-        color={stylesColor.primaryColor}
-        fontWeight="bold"
-      >
-        TheClassic
-      </Link>
     </Flex>
 
       {/* Botão de menu no mobile */}
