@@ -5,7 +5,7 @@ export const products = [
     id: 0,
     name: "Naruto",
     description: "Interface Naruto",
-    youtube: "FqhY1n81cVU",
+    youtube: "jXGRL3J87B4",
     images: imagesNaruto,
     valor: "50,00R$"
   },
