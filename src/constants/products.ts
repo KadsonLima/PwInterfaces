@@ -1,4 +1,4 @@
-import { imagesNaruto } from "@assets/produtos/naruto";
+import { imagesNaruto } from "../assets/produtos/naruto";
 
 export const products = [
   {

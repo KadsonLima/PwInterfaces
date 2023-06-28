@@ -1,7 +1,7 @@
 import { Box, Text, Button, Flex, Divider } from "@chakra-ui/react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { stylesColor } from "@styles/colors";
+import { stylesColor } from "../../styles/colors";
 
 interface ChatWindowProps {
   onClose: () => void;

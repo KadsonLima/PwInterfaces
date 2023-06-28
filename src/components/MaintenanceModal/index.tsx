@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Spinner, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, Button } from '@chakra-ui/react';
-import { stylesColor } from '@styles/colors';
+import { stylesColor } from '../../styles/colors';
 
 
 const MaintenanceModal: React.FC = () => {

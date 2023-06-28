@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Image, Grid, Text, Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton } from "@chakra-ui/react";
-import VideoComponent from "@components/VideoComponent";
-import { stylesColor } from "@styles/colors";
+import VideoComponent from "../../components/VideoComponent";
+import { stylesColor } from "../../styles/colors";
 
 const CarouselComponent = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -20,6 +20,9 @@ const CarouselComponent = () => {
         Galleria
       </Text>
       <Grid templateColumns="repeat(4, 1fr)" gap={4} p={4}>
+        
+        <VideoComponent link="fVhIUMiiD04"/>
+        <VideoComponent link="jXGRL3J87B4"/>
         <VideoComponent link="EfWf8gBxuI4"/>
         <Image
           src="https://i.imgur.com/XMMddOb.gif"
@@ -64,7 +67,6 @@ const CarouselComponent = () => {
           }
         />
         <VideoComponent link="7WI-I8wgy9g"/>
-        <VideoComponent link="yQpAL2R6_Gw"/>
         <VideoComponent link="rmLHoPQVjQc"/>
         <VideoComponent link="YJhqjc4_sn0"/>
       </Grid>

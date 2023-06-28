@@ -1,7 +1,7 @@
 import { Box, Flex } from "@chakra-ui/react";
-import Footer  from "@components/Footer";
-import Header from "@components/Header";
-import { stylesColor } from "@styles/colors";
+import Footer  from "../../components/Footer";
+import Header from "../../components/Header";
+import { stylesColor } from "../../styles/colors";
 
 export const PageContainer = ({ children }: { children: any }) => {
   return (

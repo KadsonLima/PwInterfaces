@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalBody, Image, Box, AspectRatio } from "@chakra-ui/react";
-import { stylesColor } from "@styles/colors";
+import { stylesColor } from "../../styles/colors";
 
 const VideoComponent = ({link}:{link:string}) => {
   const [isOpen, setIsOpen] = useState(false);

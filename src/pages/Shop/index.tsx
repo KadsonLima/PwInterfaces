@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
-import DynamicBanner from "@components/Banner";
-import ProductSquare from "@components/ProductSquare";
-import { PageContainer } from "@components/pageContainer";
+import DynamicBanner from "../../components/Banner";
+import ProductSquare from "../../components/ProductSquare";
+import { PageContainer } from "../../components/pageContainer";
 
 
 
@@ -39,7 +39,7 @@ const products = [
  
 ];
 
-export const Shop = () => {
+const Shop = () => {
   return (
     <PageContainer>
       <DynamicBanner
@@ -55,3 +55,5 @@ export const Shop = () => {
     </PageContainer>
   );
 };
+
+export default Shop;

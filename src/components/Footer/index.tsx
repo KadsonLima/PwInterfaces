@@ -1,5 +1,5 @@
 import { Box, Flex, IconButton, Link, Tooltip, Text, keyframes } from "@chakra-ui/react";
-import { stylesColor } from "@styles/colors";
+import { stylesColor } from "../../styles/colors";
 import { FaYoutube, FaWhatsapp, FaTelegram } from "react-icons/fa";
 
 // Definir a animação de brilho/piscar

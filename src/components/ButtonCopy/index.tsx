@@ -1,5 +1,5 @@
 import { Button, Flex, useClipboard } from "@chakra-ui/react";
-import { stylesColor } from "@styles/colors";
+import { stylesColor } from "../../styles/colors";
 
 
 export function ButtonCopy() {

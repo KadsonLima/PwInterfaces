@@ -1,5 +1,5 @@
 import { Box, Text, SimpleGrid, AspectRatio } from "@chakra-ui/react";
-import { keyframesAnimations} from "@styles/keyframes";
+import { keyframesAnimations} from "../../styles/keyframes";
 
 const VideoBanner = () => {
 

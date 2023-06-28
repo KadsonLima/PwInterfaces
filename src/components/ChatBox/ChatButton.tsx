@@ -1,5 +1,6 @@
 import Logo from "../../assets/images/light.png";
-import { Box, Flex, Image, keyframes,  useToken } from "@chakra-ui/react";
+import { Box, Flex, keyframes,  useToken } from "@chakra-ui/react";
+import Image from "next/image";
 import { useState } from "react";
 
 interface ChatButtonProps {
@@ -32,7 +33,7 @@ const ChatButton: React.FC<ChatButtonProps> = ({ onClick }) => {
     onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}>
       <Flex onClick={onClick} width={"50px"}  borderRadius={50} bgGradient="linear(to left, #131312, #e40e0ea6)">
-      <Image src={Logo}  alt="logo" height="100%"/>
+      <Image src={Logo}  alt="logo" style={{height:"100%"}}/>
       </Flex>
     </Box>
   );
