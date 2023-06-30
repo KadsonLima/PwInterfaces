@@ -23,7 +23,7 @@ const Header = () => {
       left={0}
       top={0}
       w="100%"
-      zIndex={2}
+      zIndex={99}
     >
       <Flex
         as="header"

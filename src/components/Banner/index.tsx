@@ -48,7 +48,7 @@ const DynamicBanner = ({ width, height, fitMode, image, title }: Banner) => {
         objectFit={fitMode}
         zIndex={2}
       />
-      <Flex justifyContent={"center"} flexDirection={"column"} alignItems={"center"} position="absolute" zIndex={99} style={{top: "50%",
+      <Flex justifyContent={"center"} flexDirection={"column"} alignItems={"center"} position="absolute" zIndex={3} style={{top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   }}>
