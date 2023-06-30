@@ -5,8 +5,8 @@ import { JWT } from 'google-auth-library'
 
 const serviceAccountAuth = new JWT({
 
-    email: process.env.client_email,
-    key: process.env.private_key,
+    email: process.env.CLIENT_EMAIL,
+    key: process.env.PRIVATE_KEY,
     scopes: [
       'https://www.googleapis.com/auth/spreadsheets',
     ],
