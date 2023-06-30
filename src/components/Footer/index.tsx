@@ -3,7 +3,7 @@ import { stylesColor } from "../../styles/colors";
 import { FaYoutube, FaWhatsapp, FaTelegram } from "react-icons/fa";
 
 // Definir a animação de brilho/piscar
-const blinkAnimation = keyframes`
+export const blinkAnimation = keyframes`
     0% {
     filter: brightness(100%);
   }
