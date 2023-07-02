@@ -71,13 +71,17 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
 
   const handleSubmit = async (e:any) => {
     e.preventDefault();
-    // Lógica para enviar o formulário
-    try {
-      const response = await axios.post("http://localhost:3000/api/addClient", formValues);
-      console.log(response)
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
+    const response = await fetch('/api/addClient', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ data: formValues }),
+    });
+    
+    const data = await response.json();
+  console.log(data);
+
     setIsOpen(false);
     setShowModal(false);
   };

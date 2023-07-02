@@ -9,14 +9,16 @@ interface DataClient {
   description: string;
 }
 
-export default async function handler(
+export default async function POST(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   await doc.loadInfo();
 
+  console.log(req.body);
+  
 
-  const { nome, contato, server, service, description }: any = req.body;
+  const { nome, contato, server, service, description }: any = req.body.data;
 
   if (req.method === 'POST') {
     const servicosString = Object.entries(service)
@@ -43,7 +45,7 @@ export default async function handler(
     return res.status(200).json({ message: "Pedido Feito!" });
   }
 
-  res.status(400).json({ message: "Pedido Feito!" });
+  res.status(400).json({ message: "Pedido Não pode ser Feito!" });
     
   
   } else {
