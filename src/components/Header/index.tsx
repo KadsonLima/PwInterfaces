@@ -5,6 +5,7 @@ import { stylesColor } from "../../styles/colors";
 import Logo from "../../assets/images/light.png";
 import Link from "next/link";
 import Image from "next/image";
+import { FormButton } from "../FormButton";
 
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -57,6 +58,7 @@ const Header = () => {
           >
             Shop
           </Link>
+          
         </Flex>
 
         {/* Botão de menu no mobile */}
@@ -68,6 +70,8 @@ const Header = () => {
             onClick={handleToggle}
           />
         </Box>
+
+        <FormButton/>
 
         {/* Rotas no mobile */}
         {isExpanded && (
@@ -96,6 +100,8 @@ const Header = () => {
             </Link>
           </Flex>
         )}
+
+       
       </Flex>
     </Flex>
   );
