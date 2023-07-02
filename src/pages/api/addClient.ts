@@ -9,7 +9,7 @@ interface DataClient {
   description: string;
 }
 
-export default async function POST(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
