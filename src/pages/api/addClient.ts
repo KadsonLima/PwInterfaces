@@ -15,11 +15,11 @@ export default async function handler(
 ) {
   await doc.loadInfo();
 
-  console.log(req.body);
 
   const { nome, contato, server, service, description }: any = req.body;
 
-  const servicosString = Object.entries(service)
+  if (req.method === 'POST') {
+    const servicosString = Object.entries(service)
     .filter(([_, value]) => value === true)
     .map(([key, _]) => key).join(", ");
 
@@ -44,4 +44,12 @@ export default async function handler(
   }
 
   res.status(400).json({ message: "Pedido Feito!" });
+    
+  
+  } else {
+    // Rejeita outras requisições (GET, PUT, DELETE, etc.)
+    res.status(405).json({ message: 'Método não permitido' });
+  }
+
+
 }

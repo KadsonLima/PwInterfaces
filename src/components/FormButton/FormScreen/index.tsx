@@ -73,7 +73,7 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
     e.preventDefault();
     // Lógica para enviar o formulário
     try {
-      const response = await axios.post("/api/addClient", formValues);
+      const response = await axios.post("https://www.perfectworldinterfaces.com/api/addClient", formValues);
       console.log(response)
     } catch (error) {
       console.error("Error fetching data:", error);
