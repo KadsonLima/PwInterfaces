@@ -12,15 +12,27 @@ import {
   Checkbox,
   Button,
   CloseButton,
+  ChakraProvider,
+  extendTheme,
 } from "@chakra-ui/react";
 import axios from 'axios';
+
+// Define o tema personalizado
+const theme = extendTheme({
+  colors: {
+    dark: {
+      900: "##181616", // Cor de fundo escura
+      800: "#ffffff", // Cor do texto em branco
+      red: "#bd0505", // Cor vermelha para bordas
+    },
+  },
+});
 
 export default function FormModal({showModal,setShowModal}:{showModal:boolean, setShowModal:Function}) {
 
   useEffect(() => {
 
   }, [showModal])
-  
 
   const [isOpen, setIsOpen] = useState(showModal);
   const [formValues, setFormValues] = useState({
@@ -35,11 +47,12 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
       pwdemo: false,
     },
     description: "",
-
+    cupom:"",
   });
 
   const handleInputChange = (e:any) => {
     const { name, value } = e.target;
+    console.log(formValues)
     setFormValues((prevValues) => ({
       ...prevValues,
       [name]: value,
@@ -68,10 +81,10 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
     }));
   };
   
-
   const handleSubmit = async (e:any) => {
     e.preventDefault();
     
+    console.log("cupom a enviar", formValues)
     const response = await fetch('https://sheetdb.io/api/v1/tpxvb7uy2ba1q', {
       method: 'POST',
       headers: {
@@ -81,16 +94,16 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
     });
     
     const data = await response.json();
-  console.log(data);
+    console.log(data);
 
     setIsOpen(false);
     setShowModal(false);
   };
 
   return (
-    
+    <ChakraProvider theme={theme}> {/* Aplica o tema personalizado */}
       <Modal isOpen={isOpen} onClose={() => setShowModal(false)}>
-        <ModalContent>
+        <ModalContent bg="#312f2f" color="dark.800" style={{border:" solid 2px #9D1111"}}> {/* Define a cor de fundo e a cor do texto */}
           <ModalHeader>Pedido</ModalHeader>
           <ModalBody>
             <form onSubmit={handleSubmit}>
@@ -102,6 +115,9 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                   value={formValues.nome}
                   onChange={handleInputChange}
                   required
+                  bg="dark.900" // Define a cor de fundo
+                  color="dark.800" // Define a cor do texto
+                  borderColor="dark.red" // Define a cor da borda
                 />
               </FormControl>
               <FormControl>
@@ -112,6 +128,9 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                   value={formValues.contato}
                   onChange={handleInputChange}
                   required
+                  bg="dark.900"
+                  color="dark.800"
+                  borderColor="dark.red"
                 />
               </FormControl>
             
@@ -122,6 +141,7 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                   checked={formValues.service.converter}
                   onChange={handleCheckboxChange}
                   marginRight={10}
+                  colorScheme="red" // Define a cor do checkbox quando selecionado
                 >
                   Converter
                 </Checkbox>
@@ -129,6 +149,7 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                   name="criacao"
                   checked={formValues.service.criacao}
                   onChange={handleCheckboxChange}
+                  colorScheme="red"
                 >
                   Criação
                 </Checkbox>
@@ -139,8 +160,9 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                 <Checkbox
                   name="theclassicpw"
                   checked={formValues.server.theclassic}
-                  onChange={ handleServerCheckboxChange}
+                  onChange={handleServerCheckboxChange}
                   marginRight={10}
+                  colorScheme="red"
                 >
                   TheClassicPw
                 </Checkbox>
@@ -148,6 +170,7 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                   name="pwdemo"
                   checked={formValues.server.pwdemo}
                   onChange={handleServerCheckboxChange}
+                  colorScheme="red"
                 >
                   PwDemo
                 </Checkbox>
@@ -158,9 +181,26 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                   name="description"
                   value={formValues.description}
                   onChange={handleInputChange}
+                  bg="dark.900"
+                  color="dark.800"
+                  borderColor="dark.red"
                 />
               </FormControl>
-              <Button colorScheme="green" type="submit">
+              <FormControl display="flex" justifyContent="right" marginBottom={5} alignItems="center">
+                <FormLabel>Cupom:</FormLabel>
+                <Input
+                  width="150px"
+                  type="text"
+                  name="cupom"
+                  value={formValues.cupom}
+                  onChange={handleInputChange}
+                  required
+                  bg="dark.900"
+                  color="dark.800"
+                  borderColor="dark.red"
+                />
+              </FormControl>
+              <Button colorScheme="red" type="submit"> {/* Define a cor do botão */}
                 Enviar
               </Button>
               <CloseButton
@@ -174,5 +214,6 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
           </ModalBody>
         </ModalContent>
       </Modal>
+    </ChakraProvider>
   );
 }
