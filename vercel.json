@@ -1,4 +1,9 @@
 {
+    "functions": {
+        "/api/addClient": {
+          "timeout": 10
+        }
+      },
     "crons": [{
       "path": "/api/addClient",
       "schedule": "0 10 * * *"
