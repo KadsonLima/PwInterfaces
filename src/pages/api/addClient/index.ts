@@ -1,4 +1,4 @@
-import { doc } from "../../credentials/googlesheets";
+import { doc } from "../../../credentials/googlesheets";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 interface DataClient {
