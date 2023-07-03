@@ -71,7 +71,8 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
 
   const handleSubmit = async (e:any) => {
     e.preventDefault();
-    const response = await fetch('/api/addClient', {
+    
+    const response = await fetch('https://sheetdb.io/api/v1/tpxvb7uy2ba1q', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
