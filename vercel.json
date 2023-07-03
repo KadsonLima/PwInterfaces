@@ -1,8 +1,0 @@
-{
-    "functions": {
-        "/api/addClient": {
-          "timeout": 30
-        }
-      }
-  
-  }
