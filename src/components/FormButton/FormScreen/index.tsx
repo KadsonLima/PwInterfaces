@@ -42,10 +42,7 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
       converter: false,
       criacao: false,
     },
-    server: {
-      theclassic: false,
-      pwdemo: false,
-    },
+    server: "",
     description: "",
     cupom:"",
   });
@@ -70,16 +67,6 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
     }));
   };
 
-  const handleServerCheckboxChange = (e: any) => {
-    const { name, checked } = e.target;
-    setFormValues((prevValues) => ({
-      ...prevValues,
-      server: {
-        ...prevValues.server,
-        [name]: checked,
-      },
-    }));
-  };
   
   const handleSubmit = async (e:any) => {
     e.preventDefault();
@@ -103,7 +90,7 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
   return (
     <ChakraProvider theme={theme}> {/* Aplica o tema personalizado */}
       <Modal isOpen={isOpen} onClose={() => setShowModal(false)}>
-        <ModalContent bg="#312f2f" color="dark.800" style={{border:" solid 2px #9D1111"}}> {/* Define a cor de fundo e a cor do texto */}
+        <ModalContent bg="#312f2f" color="dark.800" style={{border:" solid 3px #bd0505"}} padding={4}> {/* Define a cor de fundo e a cor do texto */}
           <ModalHeader>Pedido</ModalHeader>
           <ModalBody>
             <form onSubmit={handleSubmit}>
@@ -115,12 +102,12 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                   value={formValues.nome}
                   onChange={handleInputChange}
                   required
-                  bg="dark.900" // Define a cor de fundo
+                  bg="#141313" // Define a cor de fundo
                   color="dark.800" // Define a cor do texto
-                  borderColor="dark.red" // Define a cor da borda
+                  border="3px solid #bd0505"
                 />
               </FormControl>
-              <FormControl>
+              <FormControl marginBottom={5}>
                 <FormLabel>Contato:</FormLabel>
                 <Input
                   type="text"
@@ -128,9 +115,9 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                   value={formValues.contato}
                   onChange={handleInputChange}
                   required
-                  bg="dark.900"
+                  bg="#141313"
                   color="dark.800"
-                  borderColor="dark.red"
+                  border="3px solid #bd0505"
                 />
               </FormControl>
             
@@ -157,23 +144,16 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
               
               <FormControl marginBottom={5}>
                 <FormLabel>Servidor:</FormLabel>
-                <Checkbox
-                  name="theclassicpw"
-                  checked={formValues.server.theclassic}
-                  onChange={handleServerCheckboxChange}
-                  marginRight={10}
-                  colorScheme="red"
-                >
-                  TheClassicPw
-                </Checkbox>
-                <Checkbox
-                  name="pwdemo"
-                  checked={formValues.server.pwdemo}
-                  onChange={handleServerCheckboxChange}
-                  colorScheme="red"
-                >
-                  PwDemo
-                </Checkbox>
+                <Input
+                  type="text"
+                  name="server"
+                  value={formValues.server}
+                  onChange={handleInputChange}
+                  required
+                  bg="#141313"
+                  color="dark.800"
+                  border="3px solid #bd0505"
+                />
               </FormControl>
               <FormControl marginBottom={5}>
                 <FormLabel>Descrição:</FormLabel>
@@ -181,13 +161,13 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                   name="description"
                   value={formValues.description}
                   onChange={handleInputChange}
-                  bg="dark.900"
+                  bg="#141313"
                   color="dark.800"
-                  borderColor="dark.red"
+                  border="3px solid #bd0505"
                 />
               </FormControl>
               <FormControl display="flex" justifyContent="right" marginBottom={5} alignItems="center">
-                <FormLabel>Cupom:</FormLabel>
+                <FormLabel>Cupom/Referência:</FormLabel>
                 <Input
                   width="150px"
                   type="text"
@@ -195,12 +175,12 @@ export default function FormModal({showModal,setShowModal}:{showModal:boolean, s
                   value={formValues.cupom}
                   onChange={handleInputChange}
                   required
-                  bg="dark.900"
+                  bg="#141313"
                   color="dark.800"
-                  borderColor="dark.red"
+                  border="3px solid #bd0505"
                 />
               </FormControl>
-              <Button colorScheme="red" type="submit"> {/* Define a cor do botão */}
+              <Button colorScheme="green" type="submit"> {/* Define a cor do botão */}
                 Enviar
               </Button>
               <CloseButton
