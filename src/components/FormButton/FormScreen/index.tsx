@@ -110,7 +110,7 @@ export default function FormModal({
       setFormValues({
         nome: "",
         contato: "",
-        service: [],
+        service: "",
         server: "",
         description: "",
         cupom: "",
