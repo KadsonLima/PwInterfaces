@@ -204,9 +204,9 @@ export default function FormModal({
                     align="center"
                     borderRadius={4}
                     fontWeight={700}
-                    border={formValues.service == `converter ${valores[1]}` ? "2px solid white" : "none"}
+                    border={formValues.service == `basic ${valores[1]}` ? "2px solid white" : "none"}
                     _hover={{border:"2px solid white", cursor:"pointer"}}
-                    onClick={()=>choiceService(`converter ${valores[1]}`)}
+                    onClick={()=>choiceService(`basic ${valores[1]}`)}
                   >
                     <span>Ui Basic</span>
                     <p>{valores[1]} R$</p>
@@ -220,9 +220,9 @@ export default function FormModal({
                     align="center"
                     borderRadius={4}
                     fontWeight={700}
-                    border={formValues.service == `converter ${valores[2]}` ? "2px solid white" : "none"}
+                    border={formValues.service == `premium ${valores[2]}` ? "2px solid white" : "none"}
                     _hover={{border:"2px solid white", cursor:"pointer"}}
-                    onClick={()=>choiceService(`converter ${valores[2]}`)}
+                    onClick={()=>choiceService(`premium ${valores[2]}`)}
                   >
                     <span>Ui Premium</span>
                     <p>{valores[2]} R$</p>
