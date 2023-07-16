@@ -71,6 +71,7 @@ export default function FormModal({
         }
 
         setValores(valores.map((valor)=>{
+          if(valor === 50) return valor
           return valor - (valor * cupomEncontrado.valor);
         }))
         
