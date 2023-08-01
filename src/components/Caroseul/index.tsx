@@ -20,7 +20,10 @@ const CarouselComponent = () => {
         Galleria
       </Text>
       <Grid templateColumns="repeat(4, 1fr)" gap={4} p={4}>
-        
+      
+        <VideoComponent link="AcyNLr1qo4A"/>
+        <VideoComponent link="LvE6GgJPtlY"/>
+        <VideoComponent link="bC52U_zGOek"/>
         <VideoComponent link="fVhIUMiiD04"/>
         <VideoComponent link="jXGRL3J87B4"/>
         <VideoComponent link="EfWf8gBxuI4"/>

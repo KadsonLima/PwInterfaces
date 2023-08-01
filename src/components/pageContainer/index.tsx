@@ -2,6 +2,7 @@ import { Box, Flex } from "@chakra-ui/react";
 import Footer  from "../../components/Footer";
 import Header from "../../components/Header";
 import { stylesColor } from "../../styles/colors";
+import Script from 'next/script'
 import Head from "next/head";
 
 export const PageContainer = ({ children }: { children: any }) => {
@@ -9,6 +10,8 @@ export const PageContainer = ({ children }: { children: any }) => {
     <>
     <Head>
         <title>KasH | Customizações UI | Widgets</title>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7681391913996548"
+     crossOrigin="anonymous"></Script>
       </Head>
       <Header />
       <Flex
