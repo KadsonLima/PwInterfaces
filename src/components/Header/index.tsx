@@ -58,7 +58,12 @@ const Header = () => {
           >
             Shop
           </Link>
-          
+          <Link
+            href="/Tools"
+            style={{ color:`${stylesColor.primaryColor}`, fontWeight:"bold", marginRight:4}}
+          >
+            Fix Interface
+          </Link>
         </Flex>
 
         {/* Botão de menu no mobile */}
