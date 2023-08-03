@@ -38,7 +38,7 @@ const Tools = () => {
             * Corrigir icones de Clans
           </Text>
           <Text fontSize="md" mb={6}>
-            Extrair dentro da pasta "The Classic PW - Mar em Furia"
+            Extrair dentro da pasta /The Classic PW - Mar em Furia
             e escutar o arquivo <strong>fixUi - TheClassicPW</strong>
           </Text>
         </Box>
@@ -57,7 +57,6 @@ const Tools = () => {
           mt={8}
           onClick={()=>{
             window.open("https://drive.google.com/file/d/1VsjXPG4VstYHTrUkApZIZb3bmBgmgnOF/view?usp=sharing", "_blank");
-            
           }}
         >
           Baixar
