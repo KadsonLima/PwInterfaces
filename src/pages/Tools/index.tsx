@@ -1,7 +1,6 @@
 import { Flex, Box, Heading, Text, Button, AspectRatio } from "@chakra-ui/react";
 import DynamicBanner from "../../components/Banner";
 import { PageContainer } from "../../components/pageContainer";
-import VideoComponent from "PwInterfaces/src/components/VideoComponent";
 
 const Tools = () => {
   return (
