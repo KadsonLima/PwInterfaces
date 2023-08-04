@@ -1,0 +1,157 @@
+#navlist {
+padding: 0;
+margin: 0;
+list-style-type: none;
+background-color: #333;
+color: #FFF;
+width: 100%;
+font: normal 90% arial, helvetica, sans-serif;
+text-align: left;
+line-height: 25px;
+position: relative;
+text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+     -1px  1px 0 #000,
+      1px  1px 0 #000;
+display: flex;
+}
+
+
+#navlist .links, .name { 
+display: inline-block;
+padding: 0px;
+position: relative;
+}
+
+#navlist .link {
+	display: inline-block;
+}
+
+#navlist .name {
+margin-right: 10px;
+/*width: 200px;
+background: url('../images/sig.png') left center no-repeat;
+background-size: 80%;*/
+color: #fdca55;
+padding-left: 10px;
+flex: none;
+}
+
+#navlist .name a{
+	text-decoration: none;
+	color: #fdca55;
+	display: block;
+	height: 25px;
+}
+
+#navlist .link a{
+text-decoration: none;
+color: #FFF;
+display: block;
+height: 25px;
+border-right: 1px solid #666;
+padding-left: 32px;
+padding-right: 5px;
+background: url('../waravatar/images/favicon.png') 5px center no-repeat;
+background-size: 20px;
+}
+
+#navlist .link a[href*=waravatar]{
+background-image: url('../waravatar/images/favicon.png');
+}
+
+#navlist .link a[href*=starchart]{
+background-image: url('https://asterpw.github.io/pwicons/f/47470.png');
+}
+
+#navlist .link a[href*=geniecalc]{
+background-image: url('../geniecalculator/images/favicon.png');
+}
+#navlist .link a[href*=refining]{
+background-image: url('https://asterpw.github.io/pwicons/f/11208.gif');
+}
+
+#navlist .link a[href*=homesteadnpcs]{
+background-image: url('https://asterpw.github.io/pwicons/f/33917.png');
+}
+
+#navlist .link a[href*=chienkun]{
+background-image: url('https://asterpw.github.io/pwicons/f/12980.png');
+}
+
+#navlist .link a[href*=celestialinfant]{
+background-image: url('https://asterpw.github.io/pwicons/f/67853.png');
+}
+#navlist .link a:hover {
+background-color: #369;
+color: #fff;
+}
+
+
+body {
+color: #FFF;
+background: black;
+font-family: Arial,Tahoma,Helvetica,sans-serif;
+margin: 0px;
+}
+
+.footer {
+	margin-top: 20px;
+	font-size: 85%;
+	color: #CCC;
+	width: 600px;
+}
+a {
+	color: #CCF;
+}
+
+
+#hLang{
+    float:right;
+    text-align:right;
+    font-size: 14px;
+    padding:5px 5px 0px 0px;
+}
+#hLang span {
+    display: inline-block;
+    margin:2px;
+    width:24px;
+    height:18px;
+}
+#hLang span.cn{
+    background: url(/pw/images/flags2.png);
+}
+#hLang span.pwi{
+    background: -24px url(/pw/images/flags2.png);
+}
+#hLang span.ru{
+    background: -48px url(/pw/images/flags2.png);
+}
+#hLang span.fr{
+    background: -72px url(/pw/images/flags2.png);
+}
+#hLang span.de{
+    background: -96px url(/pw/images/flags2.png);
+}
+#hLang span.my{
+    background: -120px url(/pw/images/flags2.png);
+}
+#hLang span.ms{
+    background: -144px url(/pw/images/flags2.png);
+}
+#hLang span.mycn{
+    background: -168px url(/pw/images/flags2.png);
+}
+#hLang span.br{
+    background: -192px url(/pw/images/flags2.png);
+}
+#hLang span.es{
+    background: -216px url(/pw/images/flags2.png);
+}
+#hLang span.ph{
+    background: -240px url(/pw/images/flags2.png);
+}
+#hLang span.jp{
+    background: -264px url(/pw/images/flags2.png);
+}

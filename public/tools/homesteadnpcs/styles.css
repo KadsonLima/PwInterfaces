@@ -1,0 +1,12 @@
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Tamanho inicial */
+  }
+  50% {
+    transform: scale(1.1); /* Tamanho intermediário */
+  }
+  100% {
+    transform: scale(1); /* Tamanho final (volta ao tamanho original) */
+}

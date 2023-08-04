@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from '@chakra-ui/react';
 import { RiLoginCircleLine } from 'react-icons/ri';
 import FormModal from './FormScreen';
+import { IoDiamondOutline } from 'react-icons/io5'
 
 export function FormButton() {
   const [showModal, setShowModal] = useState(false);
@@ -33,8 +34,7 @@ export function FormButton() {
       }}
         onClick={() => setShowModal(!showModal)}
       >
-        <RiLoginCircleLine />
-        Fazer Pedido
+        <IoDiamondOutline size={30}/>
       </Button>
       {showModal && (
         <FormModal showModal={showModal} setShowModal={setShowModal} />

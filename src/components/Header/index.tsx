@@ -39,30 +39,36 @@ const Header = () => {
         w="100%"
       >
         {/* Logo */}
-        <Link  href="/">
-          <Image src={Logo} alt="logo" height="60"  />
+        <Link href="/">
+          <Image src={Logo} alt="logo" height="60" />
         </Link>
 
         {/* Rotas no desktop */}
         <Flex display={{ base: "none", md: "flex" }} align="center" gap={2}>
           <Link
             href="/"
-            style={{ color:`${stylesColor.primaryColor}`, fontWeight:"bold", marginRight:4}}
-            
+            style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold" }}
+
           >
             Home
           </Link>
           <Link
             href="/Shop"
-            style={{ color:`${stylesColor.primaryColor}`, fontWeight:"bold", marginRight:4}}
+            style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold" }}
           >
             Shop
           </Link>
           <Link
             href="/Tools"
-            style={{ color:`${stylesColor.primaryColor}`, fontWeight:"bold", marginRight:4}}
+            style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold" }}
           >
             Fix Interface
+          </Link>
+          <Link
+            href="/Ferramentas"
+            style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold" }}
+          >
+            Ferramentas
           </Link>
         </Flex>
 
@@ -76,7 +82,7 @@ const Header = () => {
           />
         </Box>
 
-        <FormButton/>
+        <FormButton />
 
         {/* Rotas no mobile */}
         {isExpanded && (
@@ -94,19 +100,26 @@ const Header = () => {
             flexDirection={"column"}
             padding={3}
           >
-            <Link href="/"  style={{ color:`${stylesColor.primaryColor}`, fontWeight:"bold", marginRight:4}}>
+            <Link href="/" style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold", marginRight: 4 }}>
               Home
             </Link>
-            <Link href="/shop"  style={{ color:`${stylesColor.primaryColor}`, fontWeight:"bold", marginRight:4}}>
+            <Link href="/shop" style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold", marginRight: 4 }}>
               Shop
             </Link>
-            <Link href="/"  style={{ color:`${stylesColor.primaryColor}`, fontWeight:"bold", marginRight:4}}>
-              TheClassic
+            <Link
+              href="/Tools" style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold", marginRight: 4 }}>
+
+              Fix Interface
+            </Link>
+            <Link
+              href="/Ferramentas" style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold", marginRight: 4 }}>
+
+              Ferramentas
             </Link>
           </Flex>
         )}
 
-       
+
       </Flex>
     </Flex>
   );

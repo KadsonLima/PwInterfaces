@@ -17,7 +17,7 @@ export const blinkAnimation = keyframes`
 
 const Footer = () => {
   return (
-    <Box as="footer" py={4} bg={stylesColor.backgroundColor} textAlign="center">
+    <Box as="footer" py={4} bg={stylesColor.backgroundColor} textAlign="center" position="absolute" left={0} bottom={0} w="100%">
       <Flex justify="space-between" align="center" px={4}>
         <Text fontSize="smaller" color="gray.500" textAlign="left">
           Todos Direitos Reservados.
