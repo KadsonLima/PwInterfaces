@@ -2,20 +2,9 @@ import { Flex } from "@chakra-ui/react";
 import DynamicBanner from "../../components/Banner";
 import ProductSquare from "../../components/ProductSquare";
 import { PageContainer } from "../../components/pageContainer";
+import AdSense from "PwInterfaces/src/components/AdSense";
 
 
-
-// {
-//   name: "Sasuke Ui",
-//   image:"https://img.quizur.com/f/img604644a9dd6d67.87221598.jpg?lastEdited=1615217842",
-//   description: "50,00 R$",
-// },
-// {
-//   name: "Itachi Ui",
-//   image:
-//     "https://www.nawpic.com/media/2020/itachi-live-nawpic-2.jpg",
-//     description: "50,00 R$",
-// },
 
 const products = [
   {
@@ -49,6 +38,7 @@ const Shop = () => {
         fitMode="cover"
         image="https://cdn.discordapp.com/attachments/1107719283150164059/1107720553877475399/KasH_perfect_world_game_background_art_splash_art_5687de61-1525-48bd-bfbc-37011139f7a7.png"
       />
+      <AdSense/>
       <Flex p={4} >
         <ProductSquare products={products} />
       </Flex>
