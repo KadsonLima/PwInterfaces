@@ -8,7 +8,7 @@ import { products } from "../../constants/products";
 import pix from '../../assets/pix.png'
 import { ButtonCopy } from "../../components/ButtonCopy";
 import Image from "next/image";
-import AdSense from "PwInterfaces/src/components/AdSense";
+import AdSense from "../../components/AdSense";
 
 const ProductPage: React.FC = () => {
   const router = useRouter();

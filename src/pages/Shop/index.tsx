@@ -2,7 +2,7 @@ import { Flex } from "@chakra-ui/react";
 import DynamicBanner from "../../components/Banner";
 import ProductSquare from "../../components/ProductSquare";
 import { PageContainer } from "../../components/pageContainer";
-import AdSense from "PwInterfaces/src/components/AdSense";
+import AdSense from "../../components/AdSense";
 
 
 

@@ -1,7 +1,7 @@
 import { Flex, Box, Heading, Text, Button, AspectRatio } from "@chakra-ui/react";
 import DynamicBanner from "../../components/Banner";
 import { PageContainer } from "../../components/pageContainer";
-import AdSense from "PwInterfaces/src/components/AdSense";
+import AdSense from "../../components/AdSense";
 
 
 const Tools = () => {
