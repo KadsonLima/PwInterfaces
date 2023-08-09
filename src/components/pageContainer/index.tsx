@@ -5,8 +5,7 @@ import { stylesColor } from "../../styles/colors";
 import Head from "next/head";
 
 export const PageContainer = ({ children }: { children: any }) => {
-  //const adsenseScript = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7681391913996548"
-
+ 
   return (
     <>
       <Head>
