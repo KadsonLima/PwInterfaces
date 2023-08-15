@@ -35,7 +35,7 @@ export default function FormModal({
   showModal: boolean;
   setShowModal: Function;
 }) {
-  const [valores, setValores] = useState([50, 150, 200]);
+  const [valores, setValores] = useState([50, 100, 150]);
   useEffect(() => { console.log(valores)}, [showModal, valores]);
 
   const [loading, setLoading] = useState(false);

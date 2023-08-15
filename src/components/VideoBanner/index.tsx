@@ -79,7 +79,7 @@ const VideoBanner = () => {
               Map, HP, Target, Bars Custom
             </Text>
             <Text fontSize="lg" fontWeight="bold"  color={"#fff"}>
-              R$150,00
+              R$100,00
             </Text>
           </Box>
           <Box
@@ -100,7 +100,7 @@ const VideoBanner = () => {
               Gif dentro do Jogo
             </Text>
             <Text fontSize="lg" fontWeight="bold"  color={"#fff"}>
-              R$200,00
+              R$150,00
             </Text>
           </Box>
         </SimpleGrid>
