@@ -55,7 +55,7 @@ const Tools = () => {
           animation="pulse 2s infinite"
           mt={8}
           onClick={()=>{
-            window.open("/HotFixUi-KasH.exe");
+            window.open("/reparador-Interface.rar");
           }}
         >
           Executavel HotFix
