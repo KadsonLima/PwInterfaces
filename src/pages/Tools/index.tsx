@@ -21,7 +21,7 @@ const Tools = () => {
       >
         <Box textAlign="center">
           <Heading as="h2" size="lg" mb={4}>
-            Fix Interface - The Classic PW - 02/08
+            Fix Interface - The Classic PW
           </Heading>
           <AspectRatio ratio={16 / 9} marginBottom={8}>
             <iframe
@@ -55,10 +55,28 @@ const Tools = () => {
           animation="pulse 2s infinite"
           mt={8}
           onClick={()=>{
-            window.open("https://drive.google.com/file/d/1ZzvYW346VKPGkhkQrxwneEYtcjmmXPvf/view?usp=sharing", "_blank");
+            window.open("/HotFixUi-KasH.exe");
           }}
         >
-          Baixar
+          Executavel HotFix
+        </Button>
+        <Button
+          colorScheme="blue"
+          size="lg"
+          borderRadius="full"
+          fontWeight="bold"
+          px={8}
+          py={4}
+          _hover={{ boxShadow: "xl" }}
+          _active={{ scale: 0.95 }}
+          _focus={{ outline: "none" }}
+          animation="pulse 2s infinite"
+          mt={8}
+          onClick={()=>{
+            window.open("https://drive.google.com/file/d/19rsiE35WzWnIwvaR1sqq92tnMeL-aTa_/view?usp=sharing", "_blank");
+          }}
+        >
+          Arquivos atualizados dia 16/08/2023
         </Button>
       </Flex>
     </PageContainer>
