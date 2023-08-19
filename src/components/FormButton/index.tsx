@@ -34,7 +34,7 @@ export function FormButton() {
       }}
         onClick={() => setShowModal(!showModal)}
       >
-        <IoDiamondOutline size={30}/>
+        <IoDiamondOutline size={10}/> Fazer Pedido
       </Button>
       {showModal && (
         <FormModal showModal={showModal} setShowModal={setShowModal} />
