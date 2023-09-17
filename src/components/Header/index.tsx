@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Box, Flex, IconButton } from "@chakra-ui/react";
+import { useRouter } from "next/router"; // Importe o useRouter
+import { Box, Flex, IconButton, Link as ChakraLink } from "@chakra-ui/react";
 import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { stylesColor } from "../../styles/colors";
 import Logo from "../../assets/images/light.png";
@@ -9,6 +10,7 @@ import { FormButton } from "../FormButton";
 
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const router = useRouter(); // Obtenha o objeto router
 
   const handleToggle = () => {
     setIsExpanded(!isExpanded);
@@ -45,31 +47,10 @@ const Header = () => {
 
         {/* Rotas no desktop */}
         <Flex display={{ base: "none", md: "flex" }} align="center" gap={2}>
-          <Link
-            href="/"
-            style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold" }}
-
-          >
-            Home
-          </Link>
-          <Link
-            href="/Shop"
-            style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold" }}
-          >
-            Shop
-          </Link>
-          <Link
-            href="/Tools"
-            style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold" }}
-          >
-            Fix Interface
-          </Link>
-          <Link
-            href="/Ferramentas"
-            style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold" }}
-          >
-            Ferramentas
-          </Link>
+          <NavLink href="/" text="Home" />
+          <NavLink href="/Shop" text="Shop" />
+          <NavLink href="/Tools" text="Instalador Interfaces" />
+          <NavLink href="/Ferramentas" text="Ferramentas" />
         </Flex>
 
         {/* Botão de menu no mobile */}
@@ -100,28 +81,34 @@ const Header = () => {
             flexDirection={"column"}
             padding={3}
           >
-            <Link href="/" style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold", marginRight: 4 }}>
-              Home
-            </Link>
-            <Link href="/shop" style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold", marginRight: 4 }}>
-              Shop
-            </Link>
-            <Link
-              href="/Tools" style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold", marginRight: 4 }}>
-
-              Fix Interface
-            </Link>
-            <Link
-              href="/Ferramentas" style={{ color: `${stylesColor.primaryColor}`, fontWeight: "bold", marginRight: 4 }}>
-
-              Ferramentas
-            </Link>
+            <NavLink href="/" text="Home" />
+            <NavLink href="/Shop" text="Shop" />
+            <NavLink href="/Tools" text="Instalador Interfaces" />
+            <NavLink href="/Ferramentas" text="Ferramentas" />
           </Flex>
         )}
-
-
       </Flex>
     </Flex>
+  );
+};
+
+// Componente NavLink para aplicar estilos com base na rota atual
+const NavLink = ({ href, text }:any) => {
+  const router = useRouter();
+  const isActive = router.pathname === href;
+    const linkStyle = {
+      color: isActive ? "white" : stylesColor.primaryColor,
+      fontWeight: "bold",
+      borderBottom: isActive ? "2px solid white" : "none",
+      marginRight: 4,
+    };
+
+  return (
+    <Link href={href} style={linkStyle} passHref>
+
+        {text}
+
+    </Link>
   );
 };
 

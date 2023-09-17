@@ -6,7 +6,7 @@ const Tools = () => {
   return (
     <PageContainer>
       <DynamicBanner
-        title="Fix Interfaces"
+        title="Instalador de Interfaces"
         width={"100%"}
         height={"200px"}
         fitMode="cover"
@@ -21,24 +21,26 @@ const Tools = () => {
       >
         <Box textAlign="center">
           <Heading as="h2" size="lg" mb={4}>
-            Fix Interface - The Classic PW
+            Instalador de Interfaces - 1.5.1 - 1.5.9
           </Heading>
           <AspectRatio ratio={16 / 9} marginBottom={8}>
             <iframe
-              width="100%"
-              height="100%"
+              width="80%"
+              height="80%"
               src={`https://www.youtube.com/embed/4dxR77uw7vQ`}
               title="YouTube video"
               allowFullScreen
             ></iframe>
           </AspectRatio>
           <Text fontSize="md" mb={6}>
-            * Corrigir Mapas que faltam
-            * Corrigir icones de Clans
+            * Auto Instalação
+            * Mais compatibilidade
+            * Redução de Bug's
+            * Compatibilidade de Versões
           </Text>
           <Text fontSize="md" mb={6}>
-            Extrair dentro da pasta /The Classic PW - Mar em Furia
-            e escutar o arquivo <strong>fixUi - TheClassicPW</strong>
+            Com a nova implementação agora será possivel ter mais facilidade em manutenção e 
+            atualizações, após ter alguma atualização no client será preciso só re-instalar a Ui com novo instalador.
           </Text>
         </Box>
 
@@ -55,29 +57,12 @@ const Tools = () => {
           animation="pulse 2s infinite"
           mt={8}
           onClick={()=>{
-            window.open("/reparador-Interface.rar");
+            window.open("/InstaladorKasH.rar");
           }}
         >
-          Executavel HotFix
+          Instalador de Interfaces
         </Button>
-        <Button
-          colorScheme="blue"
-          size="lg"
-          borderRadius="full"
-          fontWeight="bold"
-          px={8}
-          py={4}
-          _hover={{ boxShadow: "xl" }}
-          _active={{ scale: 0.95 }}
-          _focus={{ outline: "none" }}
-          animation="pulse 2s infinite"
-          mt={8}
-          onClick={()=>{
-            window.open("https://drive.google.com/file/d/19rsiE35WzWnIwvaR1sqq92tnMeL-aTa_/view?usp=sharing", "_blank");
-          }}
-        >
-          Arquivos atualizados dia 16/08/2023
-        </Button>
+    
       </Flex>
     </PageContainer>
   );
