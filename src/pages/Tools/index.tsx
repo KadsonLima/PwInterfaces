@@ -23,7 +23,7 @@ const Tools = () => {
           <Heading as="h2" size="lg" mb={4}>
             Instalador de Interfaces - 1.5.1 - 1.5.9
           </Heading>
-          <AspectRatio ratio={16 / 9} marginBottom={8}>
+          <AspectRatio ratio={16 / 9} marginBottom={8} >
             <iframe
               width="80%"
               height="80%"
@@ -35,7 +35,7 @@ const Tools = () => {
           <Text fontSize="md" mb={6}>
             * Auto Instalação
             * Mais compatibilidade
-            * Redução de Bug's
+            * Redução de Bugs
             * Compatibilidade de Versões
           </Text>
           <Text fontSize="md" mb={6}>
