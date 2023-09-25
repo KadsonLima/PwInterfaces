@@ -31,6 +31,7 @@ const handler = async (
     // Certifique-se de que o diretório de destino exista; se não, crie-o
     fs.mkdirSync(uploadDir, { recursive: true });
 
+    //@ts-ignore
     form.uploadDir = uploadDir;
 		
     let FormResp = new Promise((resolve, reject) => {
@@ -48,11 +49,11 @@ const handler = async (
         }
 
         // Obtenha o nome original do arquivo enviado
+        //@ts-ignore
         const originalFilename = files.file.newFilename;
-		
-        // Agora, você pode mover o arquivo para o diretório de destino com o nome original do arquivo
-        const destinationPath = path.join(uploadDir, "interfaces.pck"); // Caminho relativo à raiz do projeto para o destino
+        const destinationPath = path.join(uploadDir, "interfaces.pck");
 
+        //@ts-ignore
         fs.rename(uploadDir+"/"+files.file.newFilename, destinationPath, (err) => {
           if (err) {
             reject(err);
@@ -68,7 +69,9 @@ const handler = async (
     });
 
   } catch (e) {
+    //@ts-ignore
     if (e instanceof FormidableError) {
+      //@ts-ignore
       res.status(e.httpCode || 400).json({ data: null, error: e.message });
     } else {
       console.error(e);

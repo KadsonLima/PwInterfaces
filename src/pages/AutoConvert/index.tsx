@@ -1,6 +1,5 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
 import Head from 'next/head';
-import MultipleFileUploadForm from '../../components/MultipleFileUploadForm';
 import SingleFileUploadForm from '../../components/SingleUploadForm';
 
 const Home = () => {
@@ -17,7 +16,7 @@ const Home = () => {
             Upload your files
           </Heading>
 
-          <Box spacing={10}>
+          <Box p={10}>
             <Box>
               <Heading
                 mb={3}

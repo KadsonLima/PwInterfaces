@@ -103,15 +103,7 @@ const SingleFileUploadForm = () => {
           ) : (
             <label
               htmlFor="fileInput"
-              display="flex"
-              flexDir="column"
-              alignItems="center"
-              justifyContent="center"
-              h="full"
-              py={3}
-              transition="color 150ms"
-              cursor="pointer"
-              _hover={{ color: 'gray.600' }}
+           
             >
               <chakra.svg
                 xmlns="http://www.w3.org/2000/svg"
