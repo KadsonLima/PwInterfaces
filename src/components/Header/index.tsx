@@ -63,7 +63,7 @@ const Header = () => {
           />
         </Box>
 
-        <FormButton />
+       
 
         {/* Rotas no mobile */}
         {isExpanded && (
