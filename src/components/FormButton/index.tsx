@@ -23,6 +23,7 @@ export function FormButton() {
     fontWeight: "bolder",
     transition: "0.2s",
     animation: "pulse 2s infinite alternate",
+    zIndex: 10,
     "@keyframes pulse": {
       "0%": {
         transform: "scale(1)",
