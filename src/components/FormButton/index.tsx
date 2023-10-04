@@ -42,7 +42,7 @@ export function FormButton() {
     },
     "@media (max-width: 768px)": {
       fontSize: "xx-small",
-      width: "14%",
+      width: "150px",
       borderRadius: "6px",
     },
   }}
