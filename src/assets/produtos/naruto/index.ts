@@ -12,3 +12,5 @@ export const imagesNaruto = [
     map,
     target,
 ]
+
+export const imagesMagenta = ["https://i.imgur.com/EQEjMLq.jpg"]

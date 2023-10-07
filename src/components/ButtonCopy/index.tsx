@@ -1,15 +1,32 @@
 import { Button, Flex, useClipboard } from "@chakra-ui/react";
-import { stylesColor } from "../../styles/colors";
+
+export function ButtonCopy({ link }: { link: string }) {
 
 
-export function ButtonCopy() {
-    const { onCopy, hasCopied } = useClipboard("903386eb-8cfe-43bd-905d-6ef809dbcfd1");
-    
-    return (
-      <>
-        <Flex mb={2}>
-          <Button color={stylesColor.primaryColor} bg="white" onClick={onCopy}>{hasCopied ? "Chave Copiada!" : "Copiar Chave Pix"}</Button>
-        </Flex>
-      </>
-    )
-  }
+  return (
+    <>
+      <Flex mb={2} >
+        <Button
+          onClick={()=>window.open(link)}
+          sx={{animation: "pulse1 2s infinite alternate",
+    "@keyframes pulse1": {
+      "0%": {
+        transform: "scale(1)",
+        background: "blue.400",
+        color: "whiteAlpha.800",
+      },
+      "100%": {
+        transform: "scale(1.1)",
+        background: "white",
+        color: "blue.400",
+      },
+    },}}
+        >
+          Efetuar Compra
+        </Button>
+      </Flex>
+
+  
+    </>
+  );
+}

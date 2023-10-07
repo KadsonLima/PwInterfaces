@@ -34,7 +34,7 @@ export const PageContainer = ({ children }: { children: any }) => {
           {children}
 
         </Box>
-        <Box position={"fixed"} bottom={"34px"} right={"20px"}>
+        <Box position={"fixed"} bottom={"34px"} right={"20px"} zIndex={9}>
         <FormButton />
         </Box>
       </Flex>
