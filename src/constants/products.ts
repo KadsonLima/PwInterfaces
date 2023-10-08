@@ -1,4 +1,4 @@
-import { imagesMagenta, imagesMagentaBlue, imagesNaruto } from "../assets/produtos/naruto";
+import { imagesDefault, imagesMagenta, imagesMagentaBlue, imagesNaruto } from "../assets/produtos/naruto";
 
 // {
 //   id: 0,
@@ -11,6 +11,15 @@ import { imagesMagenta, imagesMagentaBlue, imagesNaruto } from "../assets/produt
 // },
 
 export const products = [
+  {
+    id: 0,
+    name: "Interface Padrão - Mapa Grande, Daimon Reta e Esconde PT",
+    description: "Interface Padrão com Mapa Grande, daimon reta e o T modificado para esconder PT, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs.",
+    youtube: "KO3kwNtTsCw",
+    images: imagesDefault,
+    link:"https://mpago.la/124JewL",
+    valor: "25,00R$"
+  },
   {
     id: 1,
     name: "Magenta Ui - Para Telas Pequenas Archy's",
