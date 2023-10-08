@@ -4,7 +4,6 @@ import CarouselComponent from "../components/Caroseul"
 import ServiceHighlights from "../components/HighlightBlock"
 import VideoBanner from "../components/VideoBanner"
 import { PageContainer } from "../components/pageContainer"
-import AdSense from '../components/AdSense'
 
 
 

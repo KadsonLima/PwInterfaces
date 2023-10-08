@@ -5,10 +5,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useRouter } from "next/router";
 import { products } from "../../constants/products";
-import pix from '../../assets/pix.png'
 import { ButtonCopy } from "../../components/ButtonCopy";
 import Image from "next/image";
-import AdSense from "../../components/AdSense";
 
 const ProductPage: React.FC = () => {
   const router = useRouter();
@@ -33,7 +31,6 @@ const ProductPage: React.FC = () => {
         fitMode="cover"
         image="https://cdn.discordapp.com/attachments/1107719283150164059/1107720553877475399/KasH_perfect_world_game_background_art_splash_art_5687de61-1525-48bd-bfbc-37011139f7a7.png"
       />
-      <AdSense/>
       <Flex p={4} flexDirection="column" justifyContent="space-evenly" alignItems="center" textAlign="center">
         <Heading as="h1" mb={4}>
           {dataUi?.name}
