@@ -3,24 +3,9 @@ import DynamicBanner from "../../components/Banner";
 import ProductSquare from "../../components/ProductSquare";
 import { PageContainer } from "../../components/pageContainer";
 import AdSense from "../../components/AdSense";
+import { products } from "../../constants/products";
 
 
-
-const products = [
-  {
-    name: "Naruto Ui",
-    image:
-      "https://portalpopline.com.br/wp-content/uploads/2021/09/naruto-thumb.png",
-    description: "50,00 R$",
-  },
-  {
-    name: "Magenta Ui - Para Tela Pequena",
-    image:
-      "https://i.imgur.com/EQEjMLq.jpg",
-      description: "50,00 R$",
-  }
- 
-];
 
 const Shop = () => {
   return (
