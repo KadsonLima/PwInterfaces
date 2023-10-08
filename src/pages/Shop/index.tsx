@@ -14,17 +14,11 @@ const products = [
     description: "50,00 R$",
   },
   {
-    name: "Criar Ui Basic",
+    name: "Magenta Ui - Para Tela Pequena",
     image:
-      "https://media.istockphoto.com/id/1163415141/pt/vetorial/gears-icon-red-background.jpg?s=170667a&w=0&k=20&c=M17L78qEAEkCM2uHFtUDGBlvByM6cLG2iNiYA1SwpJ0=",
-      description: "150,00 R$",
-  },
-  {
-    name: "Criar Ui Premium",
-    image:
-      "https://media.istockphoto.com/id/828266632/pt/vetorial/golden-gear-vector-on-black-background.jpg?s=170667a&w=0&k=20&c=FMlrxjRluPhjqDYM1REC-dxX_mf4Hl4nSzl-l9_T96o=",
-      description: "200,00 R$",
-  },
+      "https://i.imgur.com/EQEjMLq.jpg",
+      description: "50,00 R$",
+  }
  
 ];
 

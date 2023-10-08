@@ -16,7 +16,15 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname:'i.imgur.com'
+      },
+      {
+        protocol: 'https',
         hostname:'w7.pngwing.com'
+      },
+      {
+        protocol: 'https',
+        hostname:'aplicbronze.com.br'
       },
       {
         protocol: 'https',

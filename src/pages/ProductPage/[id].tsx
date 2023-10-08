@@ -20,7 +20,7 @@ const ProductPage: React.FC = () => {
 
   const images = array?.map((image:any) => (
     <Box width="100%" key={image}>
-      <Image src={image} alt="Imagem 1"  style={{width:"100%",height:"auto"}}  />
+      <Image src={image} alt="Imagem 1" width={100} height={100} style={{width:"100%",height:"auto"}}  />
     </Box>
   ));
 
@@ -39,19 +39,27 @@ const ProductPage: React.FC = () => {
           {dataUi?.name}
         </Heading>
 
-        <Box w="100%" maxWidth="1050px">
+        <Box w="100%" maxWidth="1600px">
           <Carousel showThumbs={true} dynamicHeight={true} emulateTouch={true}>
             {images}
           </Carousel>
         </Box>
 
         <Flex alignItems="center" justifyContent="space-evenly" marginBottom={10}>
-          <Image src={pix} alt="chave pix 903386eb-8cfe-43bd-905d-6ef809dbcfd1" width={150} height={150} style={{ border: "2px solid #9d1111" }} />
-          <Box p={4}>
-            <Text>Pagamento</Text>
-            <Text fontSize={"sm"}>Ao fazer o pagamento entrar em contato via Whatsapp informando o server.</Text>
-            <Text> Valor: {dataUi?.valor}</Text>
-            <ButtonCopy />
+        <Image
+        src={"https://i.imgur.com/g4qorI5.png"}
+        alt="mercadoPago"
+        width={300}
+        height={150}/>
+          <Box p={4} display="flex" flexDirection={"column"} alignItems={"center"}>
+          
+            <Text color="white" fontWeight={"semibold"} fontSize={"large"}>Pagamento - Via Mercado Pago</Text>
+            <Text fontSize={"sm"}>Aceitando Cartão, Pix, Boleto, etc...</Text>
+            <Text fontSize={"sm"}>Ao efetuar o Pagamento, será enviado automaticamente o link para o download</Text>
+            
+            <Text marginBottom={5}> Valor: {dataUi?.valor}</Text>
+            
+            <ButtonCopy link={dataUi?.link}  />
           </Box>
         </Flex>
 

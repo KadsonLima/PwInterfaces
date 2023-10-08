@@ -1,4 +1,4 @@
-import { imagesNaruto } from "../assets/produtos/naruto";
+import { imagesMagenta, imagesNaruto } from "../assets/produtos/naruto";
 
 export const products = [
   {
@@ -7,27 +7,16 @@ export const products = [
     description: "Interface Naruto",
     youtube: "jXGRL3J87B4",
     images: imagesNaruto,
+    link:"https://mpago.la/2yt3oNX",
     valor: "50,00R$"
   },
   {
     id: 1,
-    name: "Naruto",
-    description: "Interface Naruto",
-    youtube: "FqhY1n81cVU",
-    images: imagesNaruto,
-  },
-  {
-    id: 2,
-    name: "Naruto",
-    description: "Interface Naruto",
-    youtube: "FqhY1n81cVU",
-    images: imagesNaruto,
-  },
-  {
-    id: 3,
-    name: "Naruto",
-    description: "Interface Naruto",
-    youtube: "FqhY1n81cVU",
-    images: imagesNaruto,
+    name: "Magenta Ui - Para Telas Pequenas por:Archy's",
+    description: "Magenta Ui - Para Telas Pequenas, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    youtube: "https://www.youtube.com/watch?v=e2_M43-RP9g&ab_channel=KasH",
+    images: imagesMagenta,
+    link:"https://mpago.la/2yt3oNX",
+    valor: "50,00R$"
   },
 ];
