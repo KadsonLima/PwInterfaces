@@ -45,7 +45,7 @@ const ProductPage: React.FC = () => {
           </Carousel>
         </Box>
 
-        <Flex alignItems="center" justifyContent="space-evenly" marginBottom={10}>
+        <Flex alignItems="center" justifyContent="space-evenly" marginBottom={10}  flexDir={["column", "row"]}>
         <Image
         src={"https://i.imgur.com/g4qorI5.png"}
         alt="mercadoPago"
