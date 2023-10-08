@@ -20,7 +20,7 @@ const ProductPage: React.FC = () => {
 
   const images = array?.map((image:any) => (
     <Box width="100%" key={image}>
-      <Image src={image} alt="Imagem 1" width={100} height={100} style={{width:"100%",height:"auto"}}  />
+      <img src={image} alt={image}  />
     </Box>
   ));
 

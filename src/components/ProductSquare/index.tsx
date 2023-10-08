@@ -2,9 +2,13 @@ import { Box, Image, Text, Grid, Flex } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 interface Product {
-  name: string;
-  image: string;
-  description: string;
+  id: Number,
+    name: string,
+    description: String,
+    youtube: String,
+    images: string[],
+    link:String,
+    valor: String
 }
 
 const ProductSquare = ({ products }: { products: Product[] }) => {
@@ -41,7 +45,7 @@ const ProductSquare = ({ products }: { products: Product[] }) => {
               minHeight="300px" // Definindo uma altura mínima fixa
             >
               <Image
-                src={product.image}
+                src={product.images[0]}
                 alt={product.name}
                 objectFit="cover"
                 borderBottom="2px solid #860505"
@@ -54,7 +58,7 @@ const ProductSquare = ({ products }: { products: Product[] }) => {
                   {product.name}
                 </Text>
                 <Text mt={2} color={"blackAlpha.800"} fontSize={{ base: "xs", md: "xm" }}>
-                  {product.description}
+                  {product.valor}
                 </Text>
               </Flex>
             </Box>
