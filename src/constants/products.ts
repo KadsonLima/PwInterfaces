@@ -1,4 +1,4 @@
-import { imagesDefault, imagesMagenta, imagesMagentaBlue, imagesNaruto } from "../assets/produtos/naruto";
+import { imagesDefault, imagesFlamengo, imagesMagenta, imagesMagentaBlue, imagesNaruto } from "../assets/produtos/naruto";
 
 // {
 //   id: 0,
@@ -43,7 +43,7 @@ export const products = [
     name: "Flamengo Ui",
     description: "Flamengo, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
     youtube: "2DUZmind1pQ",
-    images: imagesMagentaBlue,
+    images: imagesFlamengo,
     link:"https://mpago.la/1qkkdqx",
     valor: "50,00R$"
   },
