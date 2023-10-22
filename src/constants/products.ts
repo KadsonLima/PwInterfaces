@@ -1,4 +1,4 @@
-import { imagesDefault, imagesFlamengo, imagesMagenta, imagesMagentaBlue, imagesNaruto } from "../assets/produtos/naruto";
+import { imagesDefault, imagesFlamengo, imagesGengar, imagesMagenta, imagesMagentaBlue, imagesNaruto } from "../assets/produtos/naruto";
 
 // {
 //   id: 0,
@@ -15,7 +15,7 @@ export const products = [
     id: 0,
     name: "Interface Padrão - Mapa Grande, Daimon Reta e Esconde PT",
     description: "Interface Padrão com Mapa Grande, daimon reta e o T modificado para esconder PT, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs.",
-    youtube: "KO3kwNtTsCw",
+    youtube: "umhycB2KClI",
     images: imagesDefault,
     link:"https://mpago.la/124JewL",
     valor: "25,00R$"
@@ -45,6 +45,15 @@ export const products = [
     youtube: "2DUZmind1pQ",
     images: imagesFlamengo,
     link:"https://mpago.la/1qkkdqx",
+    valor: "50,00R$"
+  },
+  {
+    id: 4,
+    name: "Gengar Ui",
+    description: "Gengar, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    youtube: "nWbuM0QjXRg",
+    images: imagesGengar,
+    link:"https://mpago.la/2yrumQ1",
     valor: "50,00R$"
   },
 ];
