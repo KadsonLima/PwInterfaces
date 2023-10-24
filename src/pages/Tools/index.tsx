@@ -16,7 +16,8 @@ const Tools = () => {
   const URL = process.env.NEXT_PUBLIC_BASE_URL;
   const Object = process.env.NEXT_PUBLIC_MY_OBJECT;
   const ObjectJSON =  Object && JSON.parse(Object);
-
+  const env = process.env;
+  console.log(env);
 
   console.log("console.lofg"+URL)
   const handlePaymentVerification = () => {

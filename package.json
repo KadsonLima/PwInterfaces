@@ -1,6 +1,12 @@
 {
   "name": "pwinterfacesv3",
   "private": true,
+  "eslintConfig": {
+    "env": {
+        "browser": true,
+        "node": true
+    }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
