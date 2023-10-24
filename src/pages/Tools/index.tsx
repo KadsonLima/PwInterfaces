@@ -2,7 +2,7 @@ import { Flex, Box, Heading, Text, Button, AspectRatio, Input, Image } from "@ch
 import DynamicBanner from "../../components/Banner";
 import { PageContainer } from "../../components/pageContainer";
 import { useState } from "react";
-import { PaymentDetails } from "Projetos/src/interface/payment";
+import { PaymentDetails } from "../../interface/payment";
 import { Link } from "@chakra-ui/next-js";
 
 
