@@ -20,7 +20,7 @@ const Tools = () => {
   const handlePaymentVerification = () => {
     setLoading(true);
 
-    fetch(`${URL}${paymentId}`, {
+    fetch(`https://api.mercadopago.com/v1/payments/${paymentId}`, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${ACCESSTOKEN}`
