@@ -17,6 +17,8 @@ const Tools = () => {
   const Object = process.env.NEXT_PUBLIC_MY_OBJECT;
   const ObjectJSON =  Object && JSON.parse(Object);
 
+
+  console.log("console.lofg"+URL)
   const handlePaymentVerification = () => {
     setLoading(true);
 
