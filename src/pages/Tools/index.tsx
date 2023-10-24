@@ -12,9 +12,9 @@ const Tools = () => {
   const [loading, setLoading] = useState(false);
   const [paymentDetails, setPaymentDetails] = useState<PaymentDetails | null>(null);
   
-  const ACCESSTOKEN = process.env.API_KEY;
-  const URL = process.env.BASE_URL;
-  const Object = process.env.MY_OBJECT;
+  const ACCESSTOKEN = process.env.NEXT_PUBLIC_API_KEY;
+  const URL = process.env.NEXT_PUBLIC_BASE_URL;
+  const Object = process.env.NEXT_PUBLIC_MY_OBJECT;
   const ObjectJSON =  Object && JSON.parse(Object);
 
   const handlePaymentVerification = () => {
