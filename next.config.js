@@ -2,7 +2,11 @@ const { resolve } = require('path');
 
 module.exports = {
   reactStrictMode: true,
-
+  env: {
+    BASE_URL: process.env.BASE_URL,
+    API_KEY: process.env.API_KEY,
+    MY_OBJECT: process.env.MY_OBJECT,
+  },
   pageExtensions: ['tsx', 'ts'],
   images: {
     remotePatterns: [

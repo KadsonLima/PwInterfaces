@@ -1,12 +1,50 @@
-import { Flex, Box, Heading, Text, Button, AspectRatio } from "@chakra-ui/react";
+import { Flex, Box, Heading, Text, Button, AspectRatio, Input, Image } from "@chakra-ui/react";
 import DynamicBanner from "../../components/Banner";
 import { PageContainer } from "../../components/pageContainer";
+import { useState } from "react";
+import { PaymentDetails } from "Projetos/src/interface/payment";
+import { Link } from "@chakra-ui/next-js";
+
 
 const Tools = () => {
+
+  const [paymentId, setPaymentId] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [paymentDetails, setPaymentDetails] = useState<PaymentDetails | null>(null);
+  
+  const ACCESSTOKEN = process.env.API_KEY;
+  const URL = process.env.BASE_URL;
+  const Object = process.env.MY_OBJECT;
+  const ObjectJSON =  Object && JSON.parse(Object);
+
+  const handlePaymentVerification = () => {
+    setLoading(true);
+
+    fetch(`${URL}${paymentId}`, {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${ACCESSTOKEN}`
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        setPaymentDetails(data);
+        console.log(paymentDetails)
+        console.log(ObjectJSON)
+      })
+      .catch(error => {
+        console.error('Ocorreu um erro:', error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
+
   return (
     <PageContainer>
       <DynamicBanner
-        title="Instalador de Interfaces"
+        title="Resgatar Interface"
         width={"100%"}
         height={"200px"}
         fitMode="cover"
@@ -21,47 +59,46 @@ const Tools = () => {
       >
         <Box textAlign="center">
           <Heading as="h2" size="lg" mb={4}>
-            Instalador de Interfaces - 1.5.1 - 1.5.9
+            Resgatar Interface
           </Heading>
-          <AspectRatio ratio={16 / 9} marginBottom={8} >
-            <iframe
-              width="80%"
-              height="80%"
-              src={`https://www.youtube.com/embed/4dxR77uw7vQ`}
-              title="YouTube video"
-              allowFullScreen
-            ></iframe>
-          </AspectRatio>
           <Text fontSize="md" mb={6}>
-            * Auto Instalação
-            * Mais compatibilidade
-            * Redução de Bugs
-            * Compatibilidade de Versões
+            Digite o Número de operação do Pagamento do Mercado Pago !
           </Text>
-          <Text fontSize="md" mb={6}>
-            Com a nova implementação agora será possivel ter mais facilidade em manutenção e 
-            atualizações, após ter alguma atualização no client será preciso só re-instalar a Ui com novo instalador.
-          </Text>
+          <Image
+        mx="auto" // Centraliza horizontalmente
+        width={1080}
+        height={'auto'}
+        src="https://i.imgur.com/KtJZ8Wx.png"
+        marginBottom={7}
+        alt="Número da conta"
+      />
+          <Input
+        type="text"
+        placeholder="ID do pagamento"
+        value={paymentId}
+        onChange={(e) => setPaymentId(e.target.value)}
+        style={{ backgroundColor: 'white', width: '50%' , marginRight:5}}
+      />
+      <Button onClick={handlePaymentVerification} isLoading={loading}>
+        Verificar
+      </Button>
+
+      {loading && <p>Verificando pagamento...</p>}
+
+      {paymentDetails && (
+        
+        <div>
+          <h2>Detalhes da Conta:</h2>
+          <h3>{paymentDetails.description}</h3>
+          <h2>Status da Compra:</h2>
+          <h3>{paymentDetails.status}</h3>
+          {paymentDetails.status == "approved"&& <Link target="_blank"  href={`https://www.mediafire.com/file/${ObjectJSON[`${paymentDetails.description}`]}`}>Link da Interface para Download !!</Link>}
+        
+        </div>
+      )}
+
         </Box>
 
-        <Button
-          colorScheme="blue"
-          size="lg"
-          borderRadius="full"
-          fontWeight="bold"
-          px={8}
-          py={4}
-          _hover={{ boxShadow: "xl" }}
-          _active={{ scale: 0.95 }}
-          _focus={{ outline: "none" }}
-          animation="pulse 2s infinite"
-          mt={8}
-          onClick={()=>{
-            window.open("/InstaladorKasH.rar");
-          }}
-        >
-          Instalador de Interfaces
-        </Button>
     
       </Flex>
     </PageContainer>

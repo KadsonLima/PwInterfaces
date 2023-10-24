@@ -49,7 +49,7 @@ const Header = () => {
         <Flex display={{ base: "none", md: "flex" }} align="center" gap={2}>
           <NavLink href="/" text="Home" />
           <NavLink href="/Shop" text="Shop" />
-          <NavLink href="/Tools" text="Instalador Interfaces" />
+          <NavLink href="/Tools" text="Resgatar Interface" />
           <NavLink href="/Ferramentas" text="Ferramentas" />
         </Flex>
 
@@ -83,7 +83,7 @@ const Header = () => {
           >
             <NavLink href="/" text="Home" />
             <NavLink href="/Shop" text="Shop" />
-            <NavLink href="/Tools" text="Instalador Interfaces" />
+            <NavLink href="/Tools" text="Resgatar Interface" />
             <NavLink href="/Ferramentas" text="Ferramentas" />
           </Flex>
         )}
