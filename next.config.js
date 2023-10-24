@@ -3,9 +3,9 @@ const { resolve } = require('path');
 module.exports = {
   reactStrictMode: true,
   env: {
-    BASE_URL: process.env.BASE_URL,
-    API_KEY: process.env.API_KEY,
-    MY_OBJECT: process.env.MY_OBJECT,
+    BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
+    API_KEY: process.env.NEXT_PUBLIC_API_KEY,
+    MY_OBJECT: process.env.NEXT_PUBLIC_MY_OBJECT,
   },
   pageExtensions: ['tsx', 'ts'],
   images: {
