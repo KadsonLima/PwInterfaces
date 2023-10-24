@@ -4,6 +4,7 @@ import { PageContainer } from "../../components/pageContainer";
 import { useState } from "react";
 import { PaymentDetails } from "../../interface/payment";
 import { Link } from "@chakra-ui/next-js";
+import PaymentCard from "./PaymentDetails";
 
 
 const Tools = () => {
@@ -13,11 +14,9 @@ const Tools = () => {
   const [paymentDetails, setPaymentDetails] = useState<PaymentDetails | null>(null);
   
   const ACCESSTOKEN = process.env.NEXT_PUBLIC_API_KEY;
-  const URL = process.env.NEXT_PUBLIC_BASE_URL;
-  const Object = process.env.NEXT_PUBLIC_MY_OBJECT;
-  const ObjectJSON =  Object && JSON.parse(Object);
-  const env = process.env;
-  console.log("idsjfijsdi" + env + "DSAJDSAJD" + URL + " sdffgsd " + ACCESSTOKEN);
+
+
+
 
   const handlePaymentVerification = () => {
     setLoading(true);
@@ -31,8 +30,6 @@ const Tools = () => {
       .then(response => response.json())
       .then(data => {
         setPaymentDetails(data);
-        console.log(paymentDetails)
-        console.log(ObjectJSON)
       })
       .catch(error => {
         console.error('Ocorreu um erro:', error);
@@ -89,14 +86,7 @@ const Tools = () => {
 
       {paymentDetails && (
         
-        <div>
-          <h2>Detalhes da Conta:</h2>
-          <h3>{paymentDetails.description}</h3>
-          <h2>Status da Compra:</h2>
-          <h3>{paymentDetails.status}</h3>
-          {paymentDetails.status == "approved"&& <Link target="_blank"  href={`https://www.mediafire.com/file/${ObjectJSON[`${paymentDetails.description}`]}`}>Link da Interface para Download !!</Link>}
-        
-        </div>
+        <PaymentCard paymentDetails={paymentDetails}/>
       )}
 
         </Box>
