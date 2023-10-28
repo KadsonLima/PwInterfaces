@@ -14,3 +14,5 @@ export const imagesPain = ["https://i.imgur.com/I5NH5Ka.jpeg", "https://i.imgur.
 
 export const imagesNaruto = ["https://i.imgur.com/GecindN.jpeg", "https://i.imgur.com/q8Ndzlk.jpeg", "https://i.imgur.com/N0d9aiD.jpeg"]
 
+export const imagesPalmeiras = ["https://i.imgur.com/wBoO103.jpeg"]
+

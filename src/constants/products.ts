@@ -1,4 +1,4 @@
-import { imagesDefault, imagesFlamengo, imagesGengar, imagesMagenta, imagesMagentaBlue, imagesNaruto, imagesPain,  } from "../assets/produtos/naruto";
+import { imagesDefault, imagesFlamengo, imagesGengar, imagesMagenta, imagesMagentaBlue, imagesNaruto, imagesPain, imagesPalmeiras,  } from "../assets/produtos/naruto";
 
 // {
 //   id: 0,
@@ -72,6 +72,15 @@ export const products = [
     youtube: "jXGRL3J87B4",
     images: imagesNaruto,
     link:"https://mpago.la/2gFYFqq",
+    valor: "50,00R$"
+  },
+  {
+    id: 6,
+    name: "Palmeiras Ui",
+    description: "Palmeiras, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    youtube: "9OIHSX9cj2Y",
+    images: imagesPalmeiras,
+    link:"https://mpago.la/1KLY9gk",
     valor: "50,00R$"
   },
 ];
