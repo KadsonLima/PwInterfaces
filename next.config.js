@@ -7,6 +7,22 @@ module.exports = {
     NEXT_PUBLIC_API_KEY: process.env.NEXT_PUBLIC_API_KEY,
     NEXT_PUBLIC_MY_OBJECT: process.env.NEXT_PUBLIC_MY_OBJECT,
   },
+  head: {
+    script: [
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-DDDN13BDYV",
+        async: true
+      },
+      {
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-DDDN13BDYV');
+        `
+      }
+    ]
+  },
   pageExtensions: ['tsx', 'ts'],
   images: {
     remotePatterns: [
