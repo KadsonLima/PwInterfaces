@@ -1,4 +1,4 @@
-import { imagesDefault, imagesFlamengo, imagesGengar, imagesMagenta, imagesMagentaBlue, imagesNaruto } from "../assets/produtos/naruto";
+import { imagesDefault, imagesFlamengo, imagesGengar, imagesMagenta, imagesMagentaBlue, imagesNaruto, imagesPain,  } from "../assets/produtos/naruto";
 
 // {
 //   id: 0,
@@ -54,6 +54,24 @@ export const products = [
     youtube: "nWbuM0QjXRg",
     images: imagesGengar,
     link:"https://mpago.la/2yrumQ1",
+    valor: "50,00R$"
+  },
+  {
+    id: 5,
+    name: "Pain Ui",
+    description: "Pain, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    youtube: "rmLHoPQVjQc",
+    images: imagesPain,
+    link:"https://mpago.la/2BQiNyJ",
+    valor: "50,00R$"
+  },
+  {
+    id: 5,
+    name: "Naruto Ui",
+    description: "Naruto, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    youtube: "jXGRL3J87B4",
+    images: imagesNaruto,
+    link:"https://mpago.la/2gFYFqq",
     valor: "50,00R$"
   },
 ];
