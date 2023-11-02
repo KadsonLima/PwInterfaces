@@ -13,14 +13,46 @@ const CarouselComponent = () => {
   const handleCloseModal = () => {
     setSelectedItem(null);
   };
-
+  
   return (
     <>
       <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={4} color="#fff">
         Galleria
       </Text>
       <Grid templateColumns="repeat(4, 1fr)" gap={4} p={4}>
-      
+      <Image
+          src="https://i.imgur.com/2hpaP0b.jpeg"
+          alt="Image 1"
+          _hover={{ cursor: "pointer", opacity: 0.8 }}
+          onClick={() =>
+            handleItemClick(
+              "https://i.imgur.com/2hpaP0b.jpeg"
+            )
+          }
+          cursor="pointer"
+        /><Image
+        src="https://i.imgur.com/VdT1Qsd.jpeg"
+        alt="Image 1"
+        _hover={{ cursor: "pointer", opacity: 0.8 }}
+        onClick={() =>
+          handleItemClick(
+            "https://i.imgur.com/VdT1Qsd.jpeg"
+          )
+        }
+        cursor="pointer"
+      /><Image
+        src="https://i.imgur.com/GecindN.jpeg"
+        alt="Image 1"
+        _hover={{ cursor: "pointer", opacity: 0.8 }}
+        onClick={() =>
+          handleItemClick(
+            "https://i.imgur.com/GecindN.jpeg"
+          )
+        }
+        cursor="pointer"
+      />
+        <VideoComponent link="2DUZmind1pQ"/>
+        <VideoComponent link="9OIHSX9cj2Y"/>
         <VideoComponent link="AcyNLr1qo4A"/>
         <VideoComponent link="LvE6GgJPtlY"/>
         <VideoComponent link="bC52U_zGOek"/>

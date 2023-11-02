@@ -16,3 +16,5 @@ export const imagesNaruto = ["https://i.imgur.com/GecindN.jpeg", "https://i.imgu
 
 export const imagesPalmeiras = ["https://i.imgur.com/wBoO103.jpeg"]
 
+export const imagesIchigo = ["https://i.imgur.com/tnapKV1.jpeg", "https://i.imgur.com/FYVixHq.jpeg", "https://i.imgur.com/KYwRRQg.jpeg"]
+
