@@ -41,7 +41,7 @@ export const products = [
   {
     id: 3,
     name: "Flamengo Ui",
-    description: "Flamengo, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    description: "Flamengo, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por KasH",
     youtube: "2DUZmind1pQ",
     images: imagesFlamengo,
     link:"https://mpago.la/1qkkdqx",
@@ -50,7 +50,7 @@ export const products = [
   {
     id: 4,
     name: "Gengar Ui",
-    description: "Gengar, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    description: "Gengar, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por KasH",
     youtube: "nWbuM0QjXRg",
     images: imagesGengar,
     link:"https://mpago.la/2yrumQ1",
@@ -59,7 +59,7 @@ export const products = [
   {
     id: 5,
     name: "Pain Ui",
-    description: "Pain, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    description: "Pain, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por KasH",
     youtube: "rmLHoPQVjQc",
     images: imagesPain,
     link:"https://mpago.la/2BQiNyJ",
@@ -68,7 +68,7 @@ export const products = [
   {
     id: 5,
     name: "Naruto Ui",
-    description: "Naruto, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    description: "Naruto, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por KasH",
     youtube: "jXGRL3J87B4",
     images: imagesNaruto,
     link:"https://mpago.la/2gFYFqq",
@@ -77,7 +77,7 @@ export const products = [
   {
     id: 6,
     name: "Palmeiras Ui",
-    description: "Palmeiras, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    description: "Palmeiras, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por KasH",
     youtube: "9OIHSX9cj2Y",
     images: imagesPalmeiras,
     link:"https://mpago.la/1KLY9gk",
@@ -86,7 +86,7 @@ export const products = [
   {
     id: 7,
     name: "Ichigo Ui",
-    description: "Ichigo, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por Archy's",
+    description: "Ichigo, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por KasH",
     youtube: "MjL4nLrsInk",
     images: imagesIchigo,
     link:"https://mpago.la/2SRv31y",
