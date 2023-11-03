@@ -21,6 +21,17 @@ const CarouselComponent = () => {
       </Text>
       <Grid templateColumns="repeat(4, 1fr)" gap={4} p={4}>
       <Image
+          src="https://i.imgur.com/tnapKV1.jpeg"
+          alt="Image 1"
+          _hover={{ cursor: "pointer", opacity: 0.8 }}
+          onClick={() =>
+            handleItemClick(
+              "https://i.imgur.com/tnapKV1.jpeg"
+            )
+          }
+          cursor="pointer"
+        />
+      <Image
           src="https://i.imgur.com/2hpaP0b.jpeg"
           alt="Image 1"
           _hover={{ cursor: "pointer", opacity: 0.8 }}
@@ -106,15 +117,16 @@ const CarouselComponent = () => {
         <VideoComponent link="YJhqjc4_sn0"/>
       </Grid>
 
-      <Modal isOpen={!!selectedItem} onClose={handleCloseModal} size="xl">
-      <ModalOverlay />
-      <ModalContent display={"flex"} alignItems="center" bg={stylesColor.backgroundColor}>
-        <ModalCloseButton bg="red.700" />
-        <ModalBody p={4} bg={stylesColor.backgroundColor}>
-          {selectedItem && <Image src={selectedItem} alt="Selected Item" width="100%" />}
-        </ModalBody>
-      </ModalContent>
-    </Modal>
+      <Modal isOpen={!!selectedItem} onClose={handleCloseModal} size="6xl" id="KashinhoModal" >
+        <ModalOverlay width="100%" />
+        <ModalContent display={"flex"} alignItems="center" justifyContent={"center"} bg={stylesColor.backgroundColor} width="100%">
+          <ModalCloseButton bg="red.700" />
+          <ModalBody p={4} bg={stylesColor.backgroundColor} width="100%">
+            {selectedItem && <Image src={selectedItem} alt="Selected Item" width="100%" />
+            }
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </>
   );
 };
