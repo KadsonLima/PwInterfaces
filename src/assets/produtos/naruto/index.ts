@@ -18,3 +18,5 @@ export const imagesPalmeiras = ["https://i.imgur.com/wBoO103.jpeg"]
 
 export const imagesIchigo = ["https://i.imgur.com/tnapKV1.jpeg", "https://i.imgur.com/FYVixHq.jpeg", "https://i.imgur.com/KYwRRQg.jpeg"]
 
+export const imagesToji = ["https://i.imgur.com/o2xJkME.jpeg", "https://i.imgur.com/becDCcZ.jpeg", "https://i.imgur.com/k40GIyL.jpeg"]
+

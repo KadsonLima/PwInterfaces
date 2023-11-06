@@ -1,4 +1,4 @@
-import { imagesDefault, imagesFlamengo, imagesGengar, imagesIchigo, imagesMagenta, imagesMagentaBlue, imagesNaruto, imagesPain, imagesPalmeiras,  } from "../assets/produtos/naruto";
+import { imagesDefault, imagesFlamengo, imagesGengar, imagesIchigo, imagesMagenta, imagesMagentaBlue, imagesNaruto, imagesPain, imagesPalmeiras, imagesToji,  } from "../assets/produtos/naruto";
 
 // {
 //   id: 0,
@@ -90,6 +90,15 @@ export const products = [
     youtube: "MjL4nLrsInk",
     images: imagesIchigo,
     link:"https://mpago.la/2SRv31y",
+    valor: "50,00R$"
+  },
+  {
+    id: 8,
+    name: "Toji Ui",
+    description: "Toji, Com o novo sistema de Instalação, sendo assim compatibilidade de 1.5.1-1.5.9, além de auto update reduzindo a possibilidade de bugs, interface feita por KasH",
+    youtube: "uCRMi22h8uY",
+    images: imagesToji,
+    link:"https://mpago.la/1AuuDEm",
     valor: "50,00R$"
   },
 ];
