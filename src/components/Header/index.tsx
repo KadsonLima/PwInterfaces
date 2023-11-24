@@ -83,7 +83,7 @@ const Header = () => {
           >
             <NavLink href="/" text="Home" />
             <NavLink href="/Shop" text="Shop" />
-            <NavLink href="/Tools" text="Resgatar Interface" />
+            <NavLink href="/Tools" text="Novo Instalador" />
             <NavLink href="/Ferramentas" text="Ferramentas" />
           </Flex>
         )}

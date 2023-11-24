@@ -1,6 +1,6 @@
 import { Button, Flex, useClipboard } from "@chakra-ui/react";
 
-export function ButtonCopy({ link }: { link: string }) {
+export function ButtonCopy({ link , texto}: { link: string, texto:string }) {
 
 
   return (
@@ -22,7 +22,7 @@ export function ButtonCopy({ link }: { link: string }) {
       },
     },}}
         >
-          Efetuar Compra
+          {texto}
         </Button>
       </Flex>
 

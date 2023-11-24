@@ -56,7 +56,7 @@ const ProductPage: React.FC = () => {
             
             <Text marginBottom={5}> Valor: {dataUi?.valor}</Text>
             
-            <ButtonCopy link={dataUi?.link}  />
+            <ButtonCopy link={dataUi?.link} texto="Efetuar compra" />
           </Box>
         </Flex>
 

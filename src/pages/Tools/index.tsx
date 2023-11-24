@@ -12,7 +12,7 @@ const Tools = () => {
   const [paymentId, setPaymentId] = useState('');
   const [loading, setLoading] = useState(false);
   const [paymentDetails, setPaymentDetails] = useState<PaymentDetails | null>(null);
-  
+
   const ACCESSTOKEN = process.env.NEXT_PUBLIC_API_KEY;
 
 
@@ -43,7 +43,7 @@ const Tools = () => {
   return (
     <PageContainer>
       <DynamicBanner
-        title="Resgatar Interface"
+        title="Novo Software KasHub"
         width={"100%"}
         height={"200px"}
         fitMode="cover"
@@ -58,40 +58,23 @@ const Tools = () => {
       >
         <Box textAlign="center">
           <Heading as="h2" size="lg" mb={4}>
-            Resgatar Interface
+            KasHub
           </Heading>
           <Text fontSize="md" mb={6}>
-            Digite o Número de operação do Pagamento do Mercado Pago !
+            Desenvolvimento de um aplicativo que simplificará todo o processo de download e instalação, sendo compatível tanto com o The Classic quanto com o History. 
           </Text>
           <Image
-        mx="auto" // Centraliza horizontalmente
-        width={1080}
-        height={'auto'}
-        src="https://i.imgur.com/KtJZ8Wx.png"
-        marginBottom={7}
-        alt="Número da conta"
-      />
-          <Input
-        type="text"
-        placeholder="ID do pagamento"
-        value={paymentId}
-        onChange={(e) => setPaymentId(e.target.value)}
-        style={{ backgroundColor: 'white', width: '50%' , marginRight:5}}
-      />
-      <Button onClick={handlePaymentVerification} isLoading={loading}>
-        Verificar
-      </Button>
-
-      {loading && <p>Verificando pagamento...</p>}
-
-      {paymentDetails && (
-        
-        <PaymentCard paymentDetails={paymentDetails}/>
-      )}
-
+            mx="auto" // Centraliza horizontalmente
+            width={'auto'}
+            height={'auto'}
+            src="https://i.imgur.com/7hwm9JG.png"
+            marginBottom={7}
+            alt="Número da conta"
+          />
+          <Text fontSize="md" mb={6}>O software contará com uma verificação que incluirá recursos como login automático, instalação automática e identificação das interfaces do usuário, permitindo o download direto por meio do aplicativo. Além disso, estou considerando a adição de mais funcionalidades e encorajo aqueles que tiverem ideias a compartilhá-las comigo.</Text>
         </Box>
 
-    
+
       </Flex>
     </PageContainer>
   );
