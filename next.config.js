@@ -49,7 +49,7 @@ module.exports = {
       {
         protocol: 'https',
         hostname:'theclassicpw.com'
-      }
+      },
     ],
   },
 };

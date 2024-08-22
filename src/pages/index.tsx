@@ -1,13 +1,18 @@
 import {
     Box, Flex, IconButton,
+
     Link, Text, Tooltip
 } from '@chakra-ui/react';
+import Image from "next/image";
 import type { NextPage } from 'next';
 import { blinkAnimation } from "../app/core/Footer/index";
 import { FaDiscord, FaTelegram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { PageContainer } from "../app/core/pageContainer";
 import CarouselComponent from "../components/Caroseul";
-import styles from '../styles/Home.module.css'; 
+import styles from '../styles/Home.module.css';
+import MiniCarousel from '../components/MiniCarousel';
+import TheClassicLogo from '../assets/images/logo_tcp.png';
+import TheDetroitLogo from '../assets/images/logo_detroit.png';
 
 const Home: NextPage = () => {
     return (
@@ -94,6 +99,34 @@ const Home: NextPage = () => {
                             }}
                         />
                     </Tooltip>
+                </Flex>
+            </Flex>
+            <Flex alignSelf={'center'} width={'100%'} marginTop={10} alignItems={'center'} flexDirection={'column'} gap={10}>
+                <Text className={styles['cyberpunk-text']} fontSize={'3xl'} >
+                    SERVIDORES COMPATÍVEIS
+                </Text>
+                <Flex width={'100%'} justifyContent={'center'} gap={10}>
+                <Image src={TheClassicLogo} height={120} alt='logo-the-classic'/>
+                <Image src={TheDetroitLogo} height={120} alt='logo-the-detroit'/>
+                </Flex>
+            </Flex>
+
+            <Flex alignSelf={'center'} justifyContent={'center'} width={'100%'} marginTop={10} alignItems={'center'} flexDirection={'column'} gap={3}>
+                <Text className={styles['cyberpunk-text']} fontSize={'3xl'} >
+                    NOVIDADES
+                </Text>
+                <Flex justifyContent={'space-evenly'} width={'100%'} alignItems={'center'} flexDirection={{ base: "column", md: "row" }} gap={3}>
+                    <Box>
+                        <Text fontFamily={'fantasy'} fontSize={'2xl'}>
+                            Novo Sistema de Instação e Atualização
+                        </Text>
+                        <p>* Otimização na Instalação</p>
+                        <p>* Novo UI Widget</p>
+                        <p>* Auto Login</p>
+                        <p>* Atalhos pra GFX e Arvore Preta</p>
+                        <p>* Mais Features Futuramente</p>
+                    </Box>
+                    <MiniCarousel />
                 </Flex>
             </Flex>
             <CarouselComponent />
