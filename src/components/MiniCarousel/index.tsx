@@ -26,7 +26,7 @@ const MiniCarousel = () => {
   };
 
   return (
-    <Box position="relative" width="400px" height="300px" overflow="hidden" display={"flex"} justifyContent={"center"}>
+    <Box position="relative" width={{base:"100%", md:"400px"}} height="300px" overflow="hidden" display={"flex"} justifyContent={"center"}>
       <Icon
         as={BiChevronLeft}
         position="absolute"
@@ -55,7 +55,7 @@ const MiniCarousel = () => {
       <Image
         src={images[currentIndex]}
         alt={`Imagem ${currentIndex + 1}`}
-        width="250px"
+        width={{base:"250px", md:"150px"}}
         height="100%"
         objectFit="cover"
         borderRadius="md"

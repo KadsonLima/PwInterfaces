@@ -102,12 +102,12 @@ const Home: NextPage = () => {
                 </Flex>
             </Flex>
             <Flex alignSelf={'center'} width={'100%'} marginTop={10} alignItems={'center'} flexDirection={'column'} gap={10}>
-                <Text className={styles['cyberpunk-text']} fontSize={'3xl'} >
+                <Text className={styles['cyberpunk-text']} fontSize={'3xl'} textAlign={'center'}>
                     SERVIDORES COMPATÍVEIS
                 </Text>
-                <Flex width={'100%'} justifyContent={'center'} gap={10}>
+                <Flex width={'100%'} justifyContent={'center'} gap={10} flexWrap={'wrap'}>
                 <Image src={TheClassicLogo} height={120} alt='logo-the-classic'/>
-                <Image src={TheDetroitLogo} height={120} alt='logo-the-detroit'/>
+                <Image src={TheDetroitLogo} height={100} alt='logo-the-detroit'/>
                 </Flex>
             </Flex>
 
@@ -116,7 +116,7 @@ const Home: NextPage = () => {
                     NOVIDADES
                 </Text>
                 <Flex justifyContent={'space-evenly'} width={'100%'} alignItems={'center'} flexDirection={{ base: "column", md: "row" }} gap={3}>
-                    <Box>
+                    <Box textAlign={'center'}>
                         <Text fontFamily={'fantasy'} fontSize={'2xl'}>
                             Novo Sistema de Instação e Atualização
                         </Text>
