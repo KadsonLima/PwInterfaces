@@ -8,7 +8,7 @@ import {
   Tooltip,
 } from "@chakra-ui/react";
 import { FaYoutube, FaWhatsapp, FaTelegram, FaDiscord } from "react-icons/fa";
-import { blinkAnimation } from "PwInterfaces/src/app/core/Footer"; 
+import { blinkAnimation } from "../../app/core/Footer"; 
 
 interface Banner {
   width: number | string;

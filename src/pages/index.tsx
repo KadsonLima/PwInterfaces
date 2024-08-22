@@ -3,7 +3,7 @@ import {
     Link, Text, Tooltip
 } from '@chakra-ui/react';
 import type { NextPage } from 'next';
-import { blinkAnimation } from "PwInterfaces/src/app/core/Footer";
+import { blinkAnimation } from "../app/core/Footer/index";
 import { FaDiscord, FaTelegram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { PageContainer } from "../app/core/pageContainer";
 import CarouselComponent from "../components/Caroseul";
