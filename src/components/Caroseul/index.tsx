@@ -16,7 +16,7 @@ import styles from './Carroseul.module.css';
 const CarouselComponent = () => {
   const [selectedItem, setSelectedItem] = useState(null);
 
-  const handleItemClick = (item) => setSelectedItem(item);
+  const handleItemClick = (item:any) => setSelectedItem(item);
   const handleCloseModal = () => setSelectedItem(null);
 
   const images = [
