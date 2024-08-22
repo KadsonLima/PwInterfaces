@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalBody, Image, Box, AspectRatio } from "@chakra-ui/react";
 import { stylesColor } from "../../styles/colors";
+import styles from '../Caroseul/Carroseul.module.css';
+
 
 const VideoComponent = ({link}:{link:string}) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +19,7 @@ const VideoComponent = ({link}:{link:string}) => {
     <>
       <Box onClick={handleOpenModal}>
         <Image
+        className={styles['box-images']}
           src={`https://img.youtube.com/vi/${link}/maxresdefault.jpg`}
           alt="Thumbnail"
           height="100%"

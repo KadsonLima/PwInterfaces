@@ -34,23 +34,3 @@ const HighlightBlock = ({ title, description }:{title:string, description:string
   );
 };
 
-const ServiceHighlights = () => {
-  return (
-    <Flex flexWrap="wrap" justifyContent="space-between" padding={2}>
-      <HighlightBlock
-        title="Transforme seu jogo"
-        description="É uma excelente maneira de torná-lo mais atrativo e único para o jogador."
-      />
-      <HighlightBlock
-        title="Personalize sua jogabilidade"
-        description="Jogadores possam personalizar a interface de acordo com suas preferências pessoais."
-      />
-      <HighlightBlock
-        title="Interface acessível"
-        description="Interface seja acessível para todos os jogadores."
-      />
-    </Flex>
-  );
-};
-
-export default ServiceHighlights;

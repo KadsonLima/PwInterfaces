@@ -1,5 +1,5 @@
 import { Flex, Box, Heading, Text, Button, AspectRatio } from "@chakra-ui/react";
-import { PageContainer } from "../../components/pageContainer";
+import { PageContainer } from "../../app/core/pageContainer";
 
 
 const Tools = () => {

@@ -8,7 +8,7 @@ import {
   Tooltip,
 } from "@chakra-ui/react";
 import { FaYoutube, FaWhatsapp, FaTelegram, FaDiscord } from "react-icons/fa";
-import { blinkAnimation } from "../Footer";
+import { blinkAnimation } from "PwInterfaces/src/app/core/Footer"; 
 
 interface Banner {
   width: number | string;
@@ -24,6 +24,7 @@ const DynamicBanner = ({ width, height, fitMode, image, title }: Banner) => {
       width={width}
       height={height}
       position="relative"
+      marginBottom={"10px"}
       borderBottom={"2px"}
       borderBottomColor={"#860505"}
     >
@@ -125,7 +126,7 @@ const DynamicBanner = ({ width, height, fitMode, image, title }: Banner) => {
         <Tooltip label="Discord">
           <IconButton
             as={Link}
-            href="https://discord.gg/JMyHcE73B5"
+            href="https://discord.gg/4NGnhwAUDc"
             target="_blank"
             rel="noopener noreferrer"
             width={50}

@@ -1,6 +1,6 @@
 import { AspectRatio, Box, Flex, Heading, Text } from "@chakra-ui/react";
 import DynamicBanner from "../../components/Banner";
-import { PageContainer } from "../../components/pageContainer";
+import { PageContainer } from "../../app/core/pageContainer";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useRouter } from "next/router";
@@ -29,7 +29,7 @@ const ProductPage: React.FC = () => {
         width={"100%"}
         height={"200px"}
         fitMode="cover"
-        image="https://cdn.discordapp.com/attachments/1107719283150164059/1107720553877475399/KasH_perfect_world_game_background_art_splash_art_5687de61-1525-48bd-bfbc-37011139f7a7.png"
+        image="https://cdn.midjourney.com/e6df846c-3df4-4e00-b53c-98ec17a3dda7/0_1.png"
       />
       <Flex p={4} flexDirection="column" justifyContent="space-evenly" alignItems="center" textAlign="center">
         <Heading as="h1" mb={4}>

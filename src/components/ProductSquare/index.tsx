@@ -18,12 +18,12 @@ const ProductSquare = ({ products }: { products: Product[] }) => {
       h="100%"
       borderRadius={10}
       templateColumns={{
-        base: "repeat(auto-fill, minmax(100px, 2fr))",
-        md: "repeat(auto-fill, minmax(200px, 2fr))",
+        base: "repeat(auto-fill, minmax(200px, 2fr))",
+        md: "repeat(auto-fill, minmax(300px, 2fr))",
       }}
       gap={5}
       p="20px 20px"
-      bg={"#6e6e6e89"}
+      bg={"#202021"}
     >
       {products.map((product, index) => (
         <NextLink href={`/ProductPage/${index}`} key={index}>
@@ -40,7 +40,7 @@ const ProductSquare = ({ products }: { products: Product[] }) => {
               }}
               position="relative"
               backgroundColor={"#dfd9d9"}
-              boxShadow="0 2px 4px rgb(87, 85, 85)"
+              boxShadow="0 4px 6px black"
               p={1}
               minHeight="300px" // Definindo uma altura mínima fixa
             >

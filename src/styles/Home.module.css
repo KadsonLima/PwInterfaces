@@ -1,0 +1,40 @@
+.gradient-border {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+  }
+  
+  .cyberpunk-text {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+  }
+  
+  .cyberpunk-bg {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cyberpunk-container {
+    background-image: url('../assets/images/back.png');
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 4px solid black;
+  }
+
+  .background-blur {
+    background-image: url('../assets/images/futureb.png');
+    background-position: bottom;
+    background-size: cover;
+    filter: blur(8px); /* Ajuste o valor do blur conforme necessário */
+    height: 100vh; /* Ajuste a altura conforme necessário */
+    width: 100%;
+  }
