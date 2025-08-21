@@ -107,7 +107,6 @@ const Home: NextPage = () => {
                 </Text>
                 <Flex width={'100%'} justifyContent={'center'} gap={10} flexWrap={'wrap'}>
                 <Image src={TheClassicLogo} height={120} alt='logo-the-classic'/>
-                <Image src={TheDetroitLogo} height={100} alt='logo-the-detroit'/>
                 </Flex>
             </Flex>
 
